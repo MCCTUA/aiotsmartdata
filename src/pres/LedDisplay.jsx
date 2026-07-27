@@ -1,6 +1,6 @@
 import React from 'react'
 import { PSlide, Dup, Foot } from './deckUI.jsx'
-import { VID, IMG } from '../assets.js'
+import { IMG } from '../assets.js'
 
 const SPEC_CHIPS = [
   ['ขนาดจอ', '~1.5 × 0.5 ม.'],
@@ -76,19 +76,17 @@ export default function LedDisplay() {
           <li>
             <strong>ทุกวัย</strong> (รวมผู้สูงอายุ): ตัวอักษรใหญ่ + คอนทราสต์สูง + สัญลักษณ์ชัด
           </li>
-          <li>เตือนรถสูงเกินก่อนถึงสะพาน/อุโมงค์ · ทำงานร่วมกับกล้อง AI วัดความสูง</li>
         </ul>
       </PSlide>
       <PSlide
         kicker="LED Display · 03"
-        title="หน้างานจริง — รถสูงเกินก่อนถึงจุดกลับรถ"
-        cols
+        title="การใช้งาน"
         points={[
-          'ตรวจจับความสูงล่วงหน้า → ทริกเกอร์จอ LED ทันที',
-          'สั่งงานจากส่วนกลาง / ทริกเกอร์อัตโนมัติจากเซนเซอร์',
-          'จัดคิวข้อความ + ตารางเวลาได้ · เชื่อมระบบเฝ้าระวัง/overheight/traffic',
+          'เตือนรถสูงเกินก่อนถึงสะพาน/อุโมงค์ · ปรับข้อความเรียลไทม์',
+          'ข้อความจราจร · ประชาสัมพันธ์ · แจ้งเหตุฉุกเฉิน',
+          'สั่งงานจากส่วนกลาง / ทริกเกอร์อัตโนมัติจากเซนเซอร์ · จัดคิวข้อความ + ตารางเวลาได้',
+          'เชื่อมกับระบบเซนเซอร์/ระบบเฝ้าระวัง — full-color หรือ 3-color ตามงบ',
         ]}
-        media={{ kind: 'video', src: VID.overheightDemo, poster: VID.overheightDemoPoster, badge: 'คลิป', cap: 'overheight_demo.mp4' }}
       />
       <PSlide kicker="LED Display · 04" title="BOQ ชุดป้าย LED (งานสะพานรัษฎาภิเศก)">
         <div className="grid g2" style={{ marginTop: 0 }}>

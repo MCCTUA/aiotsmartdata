@@ -1,5 +1,6 @@
 import React from 'react'
 import { PSlide, Dup } from './deckUI.jsx'
+import { IMG } from '../assets.js'
 
 export default function SmartPole() {
   return (
@@ -16,17 +17,7 @@ export default function SmartPole() {
           'ใช้ node / แพลตฟอร์มเดียวกันทั้งหมด',
           'หัวเสียบ Zhaga → ต่อยอด sensor รุ่นใหม่ได้โดยไม่รื้อเสา',
         ]}
-        mediaNode={
-          <div className="polediagram">
-            <div className="pole" />
-            <div className="stack">
-              <div className="mod"><span className="ic">💡</span>ไฟ LED</div>
-              <div className="mod"><span className="ic">📷</span>กล้อง AI</div>
-              <div className="mod"><span className="ic">📡</span>เซนเซอร์</div>
-              <div className="mod"><span className="ic">🖥️</span>จอ LED</div>
-            </div>
-          </div>
-        }
+        media={{ kind: 'img', src: IMG.smartPolePhoto, cap: 'เสาไฟติดตั้งจริงหน้างาน' }}
       />
       <PSlide
         kicker="Smart Pole · 02"

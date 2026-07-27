@@ -18,6 +18,10 @@ export const IMG = {
   ledSign: asset('images/led/led_sign.png'),
   fallDetection: asset('images/elderly-care/radar-fall-how.png'),
   trafficHero: asset('images/smart_traffic/slide01-hero.png'),
+  maptaphutEmergency: asset('images/about/13_maptaphut_emergency.jpg'),
+  gistda: asset('images/about/11_gistda.jpg'),
+  smartlightScreen1: asset('images/smartlight/Screen1.webp'),
+  smartPolePhoto: asset('images/smartlight/installation/IMG_5052.jpeg'),
 }
 
 export const VID = {
@@ -33,4 +37,6 @@ export const VID = {
   dashboardPoster: asset('videos/0518_poster.jpg'),
   overheightDemo: asset('videos/overheight_demo.mp4'),
   overheightDemoPoster: asset('videos/overheight_demo_poster.jpg'),
+  smtPcba: asset('videos/SMT_LED_PCBA_01.mp4'),
+  smtPcbaPoster: asset('videos/SMT_LED_PCBA_01_poster.jpg'),
 }

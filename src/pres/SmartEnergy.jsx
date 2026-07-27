@@ -1,5 +1,6 @@
 import React from 'react'
 import { PSlide, Dup, Foot } from './deckUI.jsx'
+import { IMG } from '../assets.js'
 
 export default function SmartEnergy() {
   return (
@@ -25,13 +26,11 @@ export default function SmartEnergy() {
           'เทียบก่อน–หลังปรับปรุง',
           'แจ้งเตือนการใช้ไฟผิดปกติ',
         ]}
-        mediaNode={
-          <div className="pendingmedia" style={{ aspectRatio: '16/9' }}>
-            <div className="ic">📊</div>
-            <div className="t">Phase 2 · แผน — ยังไม่เริ่มพัฒนา</div>
-            <div className="s">dashboard พลังงาน (roadmap)</div>
-          </div>
-        }
+        media={{
+          kind: 'img',
+          src: IMG.smartlightScreen1,
+          cap: 'ตัวอย่าง dashboard จริงจากแพลตฟอร์ม Smart Light — สไตล์ที่จะต่อยอดให้ Smart Energy (ยังไม่เริ่มพัฒนา)',
+        }}
       />
       <PSlide
         kicker="Smart Energy · 03"

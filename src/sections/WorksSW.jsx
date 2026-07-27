@@ -46,7 +46,7 @@ export default function WorksSW() {
           Big Data / ML เชื่อมข้อมูลข้ามหน่วยงานหลายสิบหน่วยในกระทรวง
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.emergencyHero, cap: 'หน้าจอระบบเหตุฉุกเฉิน (ทน.มาบตาพุด)' }}
+          media={{ kind: 'img', src: IMG.maptaphutEmergency, cap: 'หน้าจอระบบเหตุฉุกเฉิน (ทน.มาบตาพุด)' }}
           cat="Emergency Management"
           title="เทศบาล + สาธารณูปโภค"
         >
@@ -56,17 +56,11 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 3 / 3">
         <WCard
-          mediaNode={
-            <div className="pendingmedia">
-              <div className="ic">🛒</div>
-              <div className="t">รอภาพจากลูกค้า</div>
-              <div className="s">ecommerce/POS dashboard — ยังไม่ได้รับไฟล์</div>
-            </div>
-          }
+          media={{ kind: 'img', src: IMG.gistda, cap: 'ระบบ GISTDA — ภาพถ่ายดาวเทียม' }}
           cat="Ecommerce"
           title="แพลตฟอร์มค้าปลีก / ออนไลน์"
         >
-          ระบบค้าขาย + เชื่อมข้อมูลระดับองค์กร (ค้าปลีก/แบรนด์/ภาพถ่ายดาวเทียม)
+          ระบบค้าขาย + เชื่อมข้อมูลระดับองค์กร (ค้าปลีก/แบรนด์/ภาพถ่ายดาวเทียม — GISTDA)
         </WCard>
         <WCard
           mediaNode={

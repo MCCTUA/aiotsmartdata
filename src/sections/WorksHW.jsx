@@ -1,7 +1,7 @@
 import React from 'react'
 import { Section, SectionHeader } from '../components/ui.jsx'
 import { PageBlk, WCard } from '../components/WorkPage.jsx'
-import { IMG } from '../assets.js'
+import { IMG, VID } from '../assets.js'
 
 export default function WorksHW() {
   return (
@@ -12,7 +12,7 @@ export default function WorksHW() {
         lead="โรงงานผลิตเอง ออกแบบแสงเอง — ให้ตัวเลขและองค์กรระดับประเทศเป็นคนพูดแทน"
       />
 
-      <PageBlk tag="Hardware · หน้า 1 / 4">
+      <PageBlk tag="Hardware · หน้า 1 / 3">
         <WCard
           media={{ kind: 'img', src: IMG.egat, cap: 'High Bay/Canopy ที่ EGAT' }}
           cat="Reliability · EGAT"
@@ -31,7 +31,7 @@ export default function WorksHW() {
         </WCard>
       </PageBlk>
 
-      <PageBlk tag="Hardware · หน้า 2 / 4">
+      <PageBlk tag="Hardware · หน้า 2 / 3">
         <WCard
           media={{ kind: 'img', src: IMG.toa, cap: 'Solar Street Light ลานจอด TOA' }}
           cat="Solar Light · TOA"
@@ -49,40 +49,27 @@ export default function WorksHW() {
         </WCard>
       </PageBlk>
 
-      <PageBlk tag="Hardware · หน้า 3 / 4">
+      <PageBlk tag="Hardware · หน้า 3 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.panasonic, cap: 'งานแสงสว่างร่วมกับ Panasonic' }}
-          cat="Partner · Panasonic"
-          title="งานแสงสว่าง Panasonic"
-          proof="ผลิต/ติดตั้งให้แบรนด์ระดับโลก"
+          mediaNode={
+            <div className="pendingmedia">
+              <div className="ic">🚆</div>
+              <div className="t">รอรูปจากหน้างาน</div>
+              <div className="s">สถานีกลางกรุงเทพอภิวัฒน์ (T5)</div>
+            </div>
+          }
+          cat="Indoor · T5"
+          title="สถานีกลางกรุงเทพอภิวัฒน์"
+          proof="งานระดับ landmark ของประเทศ"
         >
-          ร่วมงานด้านแสงสว่างกับ Panasonic — มาตรฐานการผลิตระดับที่แบรนด์ใหญ่ยอมรับ
+          งานหลอด T5 ในสถานีรถไฟหลักของประเทศ
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.somapaFifa, cap: 'สนามฟุตบอลโสมาภา (FIFA Grade 2)' }}
-          cat="Sports Lighting · FIFA Grade 2"
-          title="สนามฟุตบอลโสมาภา"
-          proof="ผ่านมาตรฐานแสงสว่างระดับ FIFA"
-        >
-          ออกแบบและติดตั้งแสงสว่างสนามฟุตบอลให้ผ่านมาตรฐาน FIFA Grade 2
-        </WCard>
-      </PageBlk>
-
-      <PageBlk tag="Hardware · หน้า 4 / 4">
-        <WCard
-          media={{ kind: 'img', src: IMG.smtMachine, cap: 'สายการผลิต SMT ในโรงงานของเรา' }}
+          media={{ kind: 'video', src: VID.smtPcba, poster: VID.smtPcbaPoster, badge: 'คลิป', cap: 'สายการผลิต SMT LED PCBA ในโรงงานของเรา' }}
           cat="โรงงานของเรา"
           title="ผลิต–ออกแบบ–ทดสอบครบในที่เดียว"
         >
           Street Light · High Mast · Solar · T5/T8 · Flood · High Bay
-        </WCard>
-        <WCard
-          media={{ kind: 'img', src: IMG.tisiCert, cap: 'ใบรับรอง มอก. 1955-2551' }}
-          cat="มาตรฐาน · TISI"
-          title="ใบรับรอง มอก. 1955-2551"
-          proof="ผ่านการรับรองคุณภาพระดับประเทศ"
-        >
-          สินค้าโคมไฟของเราผ่านมาตรฐานอุตสาหกรรม มอก. 1955-2551
         </WCard>
       </PageBlk>
     </Section>

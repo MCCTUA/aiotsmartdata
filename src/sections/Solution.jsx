@@ -77,17 +77,7 @@ export default function Solution() {
           </SLink>
           <SLink
             target="ap-pole"
-            mediaNode={
-              <div className="polediagram">
-                <div className="pole" />
-                <div className="stack">
-                  <div className="mod"><span className="ic">💡</span>ไฟ LED</div>
-                  <div className="mod"><span className="ic">📷</span>กล้อง AI</div>
-                  <div className="mod"><span className="ic">📡</span>เซนเซอร์</div>
-                  <div className="mod"><span className="ic">🖥️</span>จอ LED</div>
-                </div>
-              </div>
-            }
+            media={{ kind: 'img', src: IMG.smartPolePhoto, cap: 'เสาไฟติดตั้งจริงหน้างาน' }}
             cat="Integrated"
             title="Smart Pole"
           >
@@ -110,13 +100,7 @@ export default function Solution() {
           </SLink>
           <SLink
             target="ap-energy"
-            mediaNode={
-              <div className="pendingmedia">
-                <div className="ic">⚡</div>
-                <div className="t">Phase 2 · แผน — ยังไม่เริ่มพัฒนา</div>
-                <div className="s">dashboard พลังงาน (roadmap)</div>
-              </div>
-            }
+            media={{ kind: 'img', src: IMG.smartlightScreen1, cap: 'ตัวอย่าง dashboard จริงจากแพลตฟอร์ม Smart Light — สไตล์ที่จะต่อยอดให้ Smart Energy' }}
             cat="Smart Energy"
             catBadge="PHASE 2 · แผน"
             title="Smart Energy"
