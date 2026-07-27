@@ -16,7 +16,17 @@ export default function SmartPole() {
           'ใช้ node / แพลตฟอร์มเดียวกันทั้งหมด',
           'หัวเสียบ Zhaga → ต่อยอด sensor รุ่นใหม่ได้โดยไม่รื้อเสา',
         ]}
-        media={{ kind: 'img', fic: '🗼', cap: 'ภาพ/ผัง smart pole' }}
+        mediaNode={
+          <div className="polediagram">
+            <div className="pole" />
+            <div className="stack">
+              <div className="mod"><span className="ic">💡</span>ไฟ LED</div>
+              <div className="mod"><span className="ic">📷</span>กล้อง AI</div>
+              <div className="mod"><span className="ic">📡</span>เซนเซอร์</div>
+              <div className="mod"><span className="ic">🖥️</span>จอ LED</div>
+            </div>
+          </div>
+        }
       />
       <PSlide
         kicker="Smart Pole · 02"

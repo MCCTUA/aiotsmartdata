@@ -25,7 +25,13 @@ export default function SmartEnergy() {
           'เทียบก่อน–หลังปรับปรุง',
           'แจ้งเตือนการใช้ไฟผิดปกติ',
         ]}
-        media={{ kind: 'img', fic: '📊', cap: 'dashboard พลังงาน (แผน)' }}
+        mediaNode={
+          <div className="pendingmedia" style={{ aspectRatio: '16/9' }}>
+            <div className="ic">📊</div>
+            <div className="t">Phase 2 · แผน — ยังไม่เริ่มพัฒนา</div>
+            <div className="s">dashboard พลังงาน (roadmap)</div>
+          </div>
+        }
       />
       <PSlide
         kicker="Smart Energy · 03"

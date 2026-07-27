@@ -50,7 +50,7 @@ export default function PresViewer({ id }) {
     )
   }
 
-  const { title, src, Deck } = entry
+  const { title, src, Deck, fullBleed } = entry
   return (
     <div className="presview">
       <div className="presbar">
@@ -60,11 +60,17 @@ export default function PresViewer({ id }) {
         <span className="ttl">{title}</span>
         {src && <span className="src">ที่มา: {src}</span>}
       </div>
-      <div className="presbody" id="presbody">
-        <div className="inner">
+      {fullBleed ? (
+        <div className="presbody presbody-full" id="presbody">
           <Deck />
         </div>
-      </div>
+      ) : (
+        <div className="presbody" id="presbody">
+          <div className="inner">
+            <Deck />
+          </div>
+        </div>
+      )}
     </div>
   )
 }

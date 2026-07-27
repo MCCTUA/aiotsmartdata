@@ -13,7 +13,7 @@ export default function Demo() {
       <SectionHeader
         kicker="สาธิตสด"
         title="Demo Smart Street Light — 3 จังหวะ"
-        lead="screen จริงจาก dev จะฝังแทน placeholder"
+        lead="รอ screen จริงจากทีม dev — ตอนนี้แสดงเป็นกล่อง “รอไฟล์” ไว้ก่อน"
       />
       <FadeUp className="grid g3">
         {STEPS.map(([eye, h, p, fic, cap]) => (
@@ -23,9 +23,10 @@ export default function Demo() {
             </div>
             <h3 style={{ marginTop: 6 }}>{h}</h3>
             <p>{p}</p>
-            <div className="media img" style={{ borderRadius: 12, marginTop: 12 }}>
-              <div className="fic">{fic}</div>
-              <div className="cap">{cap}</div>
+            <div className="pendingmedia" style={{ marginTop: 12 }}>
+              <div className="ic">{fic}</div>
+              <div className="t">รอไฟล์จากทีม dev</div>
+              <div className="s">{cap}</div>
             </div>
           </div>
         ))}

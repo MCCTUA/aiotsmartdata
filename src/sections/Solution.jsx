@@ -1,15 +1,15 @@
 import React from 'react'
 import { Section, SectionHeader, FadeUp, Media } from '../components/ui.jsx'
-import { VID } from '../assets.js'
+import { VID, IMG } from '../assets.js'
 
 const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
 // Clickable solution card → scrolls to its appendix card (which holds the
 // "open full presentation" button), mirroring the blueprint's anchor links.
-function SLink({ target, media, cat, catBadge, title, children }) {
+function SLink({ target, media, mediaNode, cat, catBadge, title, children }) {
   return (
     <div className="wcard slink" onClick={() => go(target)}>
-      <Media {...media} />
+      {mediaNode || <Media {...media} />}
       <div className="body">
         <div className="cat">
           {cat}
@@ -55,7 +55,7 @@ export default function Solution() {
           </SLink>
           <SLink
             target="ap-elder"
-            media={{ kind: 'img', fic: '🧓', cap: 'ภาพ fall detection' }}
+            media={{ kind: 'img', src: IMG.fallDetection, cap: 'หลักการ fall detection ด้วย radar' }}
             cat="Care"
             title="Elderly Care"
           >
@@ -69,7 +69,7 @@ export default function Solution() {
         <div className="wgrid">
           <SLink
             target="ap-smartlight"
-            media={{ kind: 'img', fic: '🚦', cap: 'screen smart light + traffic' }}
+            media={{ kind: 'img', src: IMG.trafficHero, cap: 'Smart Traffic — เฝ้าระวังจุดตัดทางรถไฟ/แยกเสี่ยง' }}
             cat="Lighting + Mobility"
             title="Smart Light + Smart Traffic"
           >
@@ -77,7 +77,17 @@ export default function Solution() {
           </SLink>
           <SLink
             target="ap-pole"
-            media={{ kind: 'img', fic: '🗼', cap: 'ภาพ/ผัง smart pole' }}
+            mediaNode={
+              <div className="polediagram">
+                <div className="pole" />
+                <div className="stack">
+                  <div className="mod"><span className="ic">💡</span>ไฟ LED</div>
+                  <div className="mod"><span className="ic">📷</span>กล้อง AI</div>
+                  <div className="mod"><span className="ic">📡</span>เซนเซอร์</div>
+                  <div className="mod"><span className="ic">🖥️</span>จอ LED</div>
+                </div>
+              </div>
+            }
             cat="Integrated"
             title="Smart Pole"
           >
@@ -91,7 +101,7 @@ export default function Solution() {
         <div className="wgrid">
           <SLink
             target="ap-led"
-            media={{ kind: 'img', fic: '🔆', cap: 'รูปจอ LED VMS' }}
+            media={{ kind: 'img', src: IMG.ledSign, cap: 'ป้ายจอ LED VMS หน้างานจริง' }}
             cat="LED Display"
             title="งานจอ LED"
           >
@@ -100,7 +110,13 @@ export default function Solution() {
           </SLink>
           <SLink
             target="ap-energy"
-            media={{ kind: 'img', fic: '⚡', cap: 'dashboard พลังงาน (แผน)' }}
+            mediaNode={
+              <div className="pendingmedia">
+                <div className="ic">⚡</div>
+                <div className="t">Phase 2 · แผน — ยังไม่เริ่มพัฒนา</div>
+                <div className="s">dashboard พลังงาน (roadmap)</div>
+              </div>
+            }
             cat="Smart Energy"
             catBadge="PHASE 2 · แผน"
             title="Smart Energy"

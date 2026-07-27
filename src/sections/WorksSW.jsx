@@ -1,7 +1,7 @@
 import React from 'react'
 import { Section, SectionHeader } from '../components/ui.jsx'
 import { PageBlk, WCard } from '../components/WorkPage.jsx'
-import { VID } from '../assets.js'
+import { VID, IMG } from '../assets.js'
 
 export default function WorksSW() {
   return (
@@ -14,7 +14,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 1 / 3">
         <WCard
-          media={{ kind: 'img', fic: '🛰️', cap: 'รูป dashboard/ด่านทางด่วน' }}
+          media={{ kind: 'img', src: IMG.expresswayIot, cap: 'แดชบอร์ด IoT ด่านเก็บเงินทางด่วน' }}
           cat="AIOT"
           title="ทางด่วน (การทางพิเศษ)"
           proof="ระบบ mission-critical ที่พลาดไม่ได้"
@@ -38,7 +38,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 2 / 3">
         <WCard
-          media={{ kind: 'img', fic: '⚖️', cap: 'รูป Big Data dashboard' }}
+          media={{ kind: 'img', src: IMG.justice, cap: 'ระบบ Big Data กระทรวงยุติธรรม' }}
           cat="Machine Learning"
           title="กระทรวงยุติธรรม"
           proof="ข้อมูลระดับนโยบายประเทศ"
@@ -46,7 +46,7 @@ export default function WorksSW() {
           Big Data / ML เชื่อมข้อมูลข้ามหน่วยงานหลายสิบหน่วยในกระทรวง
         </WCard>
         <WCard
-          media={{ kind: 'img', fic: '🚨', cap: 'รูประบบแจ้งเหตุ/แผนที่' }}
+          media={{ kind: 'img', src: IMG.emergencyHero, cap: 'หน้าจอระบบเหตุฉุกเฉิน (ทน.มาบตาพุด)' }}
           cat="Emergency Management"
           title="เทศบาล + สาธารณูปโภค"
         >
@@ -56,14 +56,37 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 3 / 3">
         <WCard
-          media={{ kind: 'img', fic: '🛒', cap: 'รูป ecommerce/POS dashboard' }}
+          mediaNode={
+            <div className="pendingmedia">
+              <div className="ic">🛒</div>
+              <div className="t">รอภาพจากลูกค้า</div>
+              <div className="s">ecommerce/POS dashboard — ยังไม่ได้รับไฟล์</div>
+            </div>
+          }
           cat="Ecommerce"
           title="แพลตฟอร์มค้าปลีก / ออนไลน์"
         >
           ระบบค้าขาย + เชื่อมข้อมูลระดับองค์กร (ค้าปลีก/แบรนด์/ภาพถ่ายดาวเทียม)
         </WCard>
         <WCard
-          media={{ kind: 'img', fic: '🔗', cap: 'แผนผัง IoT→Data→ML' }}
+          mediaNode={
+            <div className="flowdiagram">
+              <div className="node">
+                <div className="ic">📡</div>
+                <div className="t">IoT</div>
+              </div>
+              <div className="arrow">→</div>
+              <div className="node">
+                <div className="ic">🗄️</div>
+                <div className="t">DATA</div>
+              </div>
+              <div className="arrow">→</div>
+              <div className="node">
+                <div className="ic">🤖</div>
+                <div className="t">ML</div>
+              </div>
+            </div>
+          }
           cat="ครบวงจรข้อมูล"
           title="เชื่อมฮาร์ดแวร์เข้ากับข้อมูลได้ทั้งเส้น"
         >

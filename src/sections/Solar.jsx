@@ -39,9 +39,10 @@ export default function Solar() {
             <p>งานนี้ยังไม่จบ เราไม่ให้ตัวเลขที่ยังไม่นิ่งจนคุณเอาไปเสนอลูกค้าแล้วเสียหน้าทีหลัง</p>
           </div>
         </div>
-        <div className="media img tall" style={{ borderRadius: 14 }}>
-          <div className="fic">📐</div>
-          <div className="cap">ผล DIALux — layout เสา/ความสว่าง</div>
+        <div className="pendingmedia" style={{ aspectRatio: '4/3', borderRadius: 14 }}>
+          <div className="ic">📐</div>
+          <div className="t">รอไฟล์จากทีมออกแบบแสง</div>
+          <div className="s">ผล DIALux — layout เสา/ความสว่าง</div>
         </div>
       </FadeUp>
       <FadeUp as="p" className="lead" style={{ marginTop: 26 }}>

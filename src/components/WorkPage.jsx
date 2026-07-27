@@ -12,10 +12,12 @@ export function PageBlk({ tag, children }) {
 }
 
 // A single portfolio card: media tile (image/video/placeholder) + copy + proof.
-export function WCard({ media, cat, title, children, proof }) {
+// `mediaNode` overrides the default Media render (e.g. a hand-built diagram
+// or an honest "file pending" note) when there is no photo to show.
+export function WCard({ media, mediaNode, cat, title, children, proof }) {
   return (
     <div className="wcard">
-      <Media {...media} />
+      {mediaNode || <Media {...media} />}
       <div className="body">
         <div className="cat">{cat}</div>
         <h3>{title}</h3>

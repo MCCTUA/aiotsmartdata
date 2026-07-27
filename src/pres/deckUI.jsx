@@ -3,7 +3,7 @@ import { Media } from '../components/ui.jsx'
 
 // One presentation slide (blueprint `.pslide`): kicker + heading + bullet list,
 // with optional media (image/video) or a two-column layout.
-export function PSlide({ kicker, title, points, children, media, cols }) {
+export function PSlide({ kicker, title, points, children, media, mediaNode, cols }) {
   const list = points && (
     <ul>
       {points.map((p, i) => (
@@ -11,6 +11,7 @@ export function PSlide({ kicker, title, points, children, media, cols }) {
       ))}
     </ul>
   )
+  const mediaEl = mediaNode || (media && <Media {...media} style={{ aspectRatio: '16/9', ...(media.style || {}) }} />)
   return (
     <div className="pslide">
       {kicker && <div className="pk">{kicker}</div>}
@@ -18,13 +19,13 @@ export function PSlide({ kicker, title, points, children, media, cols }) {
       {cols ? (
         <div className="cols">
           <div>{list}{children}</div>
-          {media && <Media {...media} style={{ aspectRatio: '16/9', ...(media.style || {}) }} />}
+          {mediaEl}
         </div>
       ) : (
         <>
           {list}
           {children}
-          {media && <Media {...media} style={{ aspectRatio: '16/9', ...(media.style || {}) }} />}
+          {mediaEl}
         </>
       )}
     </div>
