@@ -1,8 +1,8 @@
 name: Deploy to Hostatom
 on:
   push:
-    branches: [main] # push ขึ้น main เมื่อไหร่ deploy อัตโนมัติ
-  workflow_dispatch: # กดรันเองได้จากแท็บ Actions
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -17,7 +17,6 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        # เพิ่ม lightningcss binary ของ Linux — จำเป็นสำหรับ build Tailwind v4 บน CI
         run: |
           npm install
           npm install -D lightningcss-linux-x64-gnu
@@ -25,15 +24,25 @@ jobs:
       - name: Build Static HTML
         run: npm run build
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          # FTP user เดิม (git_deploy_6) login แล้วอยู่ที่ root ของ webspace (หลายโดเมนรวมกัน)
-          # จึงต้องชี้เข้าโฟลเดอร์ย่อยของ subdomain ปลายทาง
-          server-dir: ./aiotsmartdata.webdemona.com/
-          protocol: ftp
-          dangerous-clean-slate: false
+      # ---- Deploy ด้วย lftp (FTPS + passive + retry) — ทนกว่า FTP-Deploy-Action มาก ----
+      # แก้อาการ ECONNRESET (data socket) ที่ plain FTP โดน Hostatom ตัดกลางคัน
+      - name: Deploy via lftp
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y lftp
+          lftp -c "
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ssl:verify-certificate no;
+            set ftp:passive-mode true;
+            set net:max-retries 5;
+            set net:persist-retries 5;
+            set net:timeout 30;
+            set net:reconnect-interval-base 5;
+            set xfer:clobber on;
+            open -u '$FTP_USERNAME','$FTP_PASSWORD' '$FTP_SERVER';
+            mirror -R --parallel=1 --verbose ./dist/ ./aiotsmartdata.webdemona.com/;
+          "
