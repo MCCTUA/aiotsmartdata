@@ -6,8 +6,9 @@ import { IMG } from '../assets.js'
 const LINKS = [
   { id: 'edge', label: 'จุดเด่น' },
   { id: 'hw', label: 'ผลงาน HW' },
+  { id: 'clients-hw', label: 'ลูกค้า HW' },
   { id: 'sw', label: 'ผลงาน SW' },
-  { id: 'clients', label: 'ลูกค้าอ้างอิง' },
+  { id: 'clients', label: 'ลูกค้า SW' },
   { id: 'solution', label: 'AIOT Solution' },
   { id: 'node', label: 'พัฒนา Node' },
   { id: 'nz', label: 'Nema/Zhaga' },

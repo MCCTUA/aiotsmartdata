@@ -72,6 +72,32 @@ export const CLIENT_LOGOS = [
   { name: 'Cute Shop', src: asset('images/about/logos/client_cute_shop.png') },
 ]
 
+// Reference-customer logo wall (Hardware / Gismo lighting side) — order is
+// display order, most-recognizable names first.
+export const GISMO_LOGOS = [
+  { name: 'EGAT (การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย)', src: asset('images/about/logos/gismo/client_egat.png') },
+  { name: 'PEA (การไฟฟ้าส่วนภูมิภาค)', src: asset('images/about/logos/gismo/client_pea.png') },
+  { name: 'กรมทางหลวง', src: asset('images/about/logos/gismo/client_dept_highways.png') },
+  { name: 'PTT', src: asset('images/about/logos/gismo/client_ptt.png') },
+  { name: 'SCG', src: asset('images/about/logos/gismo/client_scg.png') },
+  { name: 'Toyota', src: asset('images/about/logos/gismo/client_toyota.png') },
+  { name: 'Honda', src: asset('images/about/logos/gismo/client_honda.png') },
+  { name: 'Mitsubishi Motors', src: asset('images/about/logos/gismo/client_mitsubishi_motors.png') },
+  { name: 'Panasonic', src: asset('images/about/logos/gismo/client_panasonic.png') },
+  { name: 'Kubota', src: asset('images/about/logos/gismo/client_kubota.png') },
+  { name: 'Sumitomo Rubber', src: asset('images/about/logos/gismo/client_sumitomo_rubber.png') },
+  { name: 'Bangkok Glass', src: asset('images/about/logos/gismo/client_bangkok_glass.png') },
+  { name: 'Esso', src: asset('images/about/logos/gismo/client_esso.png') },
+  { name: 'Kao', src: asset('images/about/logos/gismo/client_kao.png') },
+  { name: 'PepsiCo', src: asset('images/about/logos/gismo/client_pepsico.png') },
+  { name: 'Fujikura', src: asset('images/about/logos/gismo/client_fujikura.png') },
+  { name: 'Hana', src: asset('images/about/logos/gismo/client_hana.png') },
+  { name: 'NHK', src: asset('images/about/logos/gismo/client_nhk.png') },
+  { name: 'Kantana', src: asset('images/about/logos/gismo/client_kantana.png') },
+  { name: 'CCH', src: asset('images/about/logos/gismo/client_cch.png') },
+  { name: 'PDI', src: asset('images/about/logos/gismo/client_pdi.png') },
+]
+
 export const VID = {
   centralworld: asset('videos/centralworld_height.mp4'),
   centralworldPoster: asset('videos/centralworld_poster.jpg'),

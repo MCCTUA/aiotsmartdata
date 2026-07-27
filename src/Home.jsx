@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './sections/Hero.jsx'
 import Edge from './sections/Edge.jsx'
 import WorksHW from './sections/WorksHW.jsx'
+import ClientsHW from './sections/ClientsHW.jsx'
 import WorksSW from './sections/WorksSW.jsx'
 import Clients from './sections/Clients.jsx'
 import Solution from './sections/Solution.jsx'
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <Edge />
       <WorksHW />
+      <ClientsHW />
       <WorksSW />
       <Clients />
       <Solution />
