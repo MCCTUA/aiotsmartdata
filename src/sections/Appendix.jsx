@@ -34,9 +34,15 @@ const CARDS = [
       <>
         2 รูปแบบการต่อ: <strong>ต่อหลัง NVR</strong> หรือ <strong>ต่อขนาน</strong> · สเกลจาก{' '}
         <strong>Jetson</strong> จุดเดียวถึง <strong>server</strong> · ตรวจจับเหตุการณ์หลายชนิด
+        <br />
+        <br />
+        <strong>เคสจริง — Central World:</strong> บางพื้นที่ติดตั้งเลเซอร์วัดความสูงรถไม่ได้ (ข้อจำกัดพื้นที่) จึงใช้{' '}
+        <strong>กล้องหลายตัว sync กัน</strong> ประเมินความสูงรถแทน
+        <br />
+        <strong>Phase ถัดไป:</strong> เมื่อตรวจพบรถสูงเกิน → แจ้งเตือนขึ้นป้าย LED + บันทึกหลักฐานอัตโนมัติ ส่งต่อให้นิติกรของห้างดำเนินการตามขั้นตอน
       </>
     ),
-    ref: 'แหล่ง: smartdata.webdemona.com — หน้า AI Camera / Vision',
+    ref: 'แหล่ง: smartdata.webdemona.com — หน้า AI Camera / Vision · คลิปตัวอย่าง: Central World over-height',
   },
   {
     id: 'ap-elder',

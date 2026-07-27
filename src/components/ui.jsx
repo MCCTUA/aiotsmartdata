@@ -77,10 +77,23 @@ export function Pill({ children }) {
  *   'light' — the plain light tile background, for screenshots that read
  *   best on white (dashboards, maps) rather than behind a blurred copy
  */
-export function Media({ kind = 'img', src, poster, fic, cap, badge, className = '', style, fit = 'cover', bg = 'blur' }) {
+export function Media({
+  kind = 'img',
+  src,
+  poster,
+  fic,
+  cap,
+  badge,
+  className = '',
+  style,
+  fit = 'cover',
+  bg = 'blur',
+  objectPosition,
+}) {
   const isVideo = kind === 'video'
   const blurFill = fit === 'contain' && !isVideo && !!src && bg === 'blur'
   const cls = `media${isVideo ? '' : ' img'}${fit === 'contain' ? ' fit-contain' : ''}${className ? ' ' + className : ''}`
+  const imgStyle = objectPosition ? { objectPosition } : undefined
   return (
     <div className={cls} style={style}>
       {badge && <span className="badge">{badge}</span>}
@@ -88,7 +101,7 @@ export function Media({ kind = 'img', src, poster, fic, cap, badge, className = 
       {isVideo && src ? (
         <video src={src} poster={poster} muted loop playsInline controls preload="metadata" />
       ) : !isVideo && src ? (
-        <img src={src} alt={cap || ''} loading="lazy" className={blurFill ? 'media-fg' : undefined} />
+        <img src={src} alt={cap || ''} loading="lazy" className={blurFill ? 'media-fg' : undefined} style={imgStyle} />
       ) : isVideo ? (
         <div className="play" />
       ) : (
