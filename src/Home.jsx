@@ -3,6 +3,7 @@ import Hero from './sections/Hero.jsx'
 import Edge from './sections/Edge.jsx'
 import WorksHW from './sections/WorksHW.jsx'
 import WorksSW from './sections/WorksSW.jsx'
+import Clients from './sections/Clients.jsx'
 import Solution from './sections/Solution.jsx'
 import NodeStory from './sections/NodeStory.jsx'
 import NemaZhaga from './sections/NemaZhaga.jsx'
@@ -20,6 +21,7 @@ export default function Home() {
       <Edge />
       <WorksHW />
       <WorksSW />
+      <Clients />
       <Solution />
       <NodeStory />
       <NemaZhaga />

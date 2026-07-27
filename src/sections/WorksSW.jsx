@@ -14,7 +14,14 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 1 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.expresswayIot, cap: 'แดชบอร์ด IoT ด่านเก็บเงินทางด่วน', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.exatExpresswayMap,
+            cap: 'แผนที่ระบบทางด่วน — การทางพิเศษแห่งประเทศไทย (EXAT)',
+            fit: 'contain',
+            bg: 'light',
+            className: 'tall',
+          }}
           cat="AIOT"
           title="ทางด่วน (การทางพิเศษ)"
           proof="ระบบ mission-critical ที่พลาดไม่ได้"
@@ -38,7 +45,14 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 2 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.justice, cap: 'ระบบ Big Data กระทรวงยุติธรรม', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.ojaBigdataDashboard,
+            cap: 'แดชบอร์ด Big Data กระทรวงยุติธรรม (OJA)',
+            fit: 'contain',
+            bg: 'light',
+            className: 'tall',
+          }}
           cat="Machine Learning"
           title="กระทรวงยุติธรรม"
           proof="ข้อมูลระดับนโยบายประเทศ"
@@ -56,33 +70,17 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 3 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.gistda, cap: 'ระบบ GISTDA — ภาพถ่ายดาวเทียม', fit: 'contain' }}
+          media={{ kind: 'img', src: IMG.tescolotusClubcard, cap: 'ระบบสมาชิก/คะแนนสะสม — Tesco Lotus Clubcard', fit: 'contain' }}
           cat="Ecommerce"
           title="แพลตฟอร์มค้าปลีก / ออนไลน์"
         >
-          ระบบค้าขาย + เชื่อมข้อมูลระดับองค์กร (ค้าปลีก/แบรนด์/ภาพถ่ายดาวเทียม — GISTDA)
+          ระบบสมาชิก คะแนนสะสม และค้าขายออนไลน์ที่เชื่อมข้อมูลระดับองค์กรค้าปลีก (Tesco Lotus, MK)
         </WCard>
         <WCard
-          mediaNode={
-            <div className="flowdiagram">
-              <div className="node">
-                <div className="ic">📡</div>
-                <div className="t">IoT</div>
-              </div>
-              <div className="arrow">→</div>
-              <div className="node">
-                <div className="ic">🗄️</div>
-                <div className="t">DATA</div>
-              </div>
-              <div className="arrow">→</div>
-              <div className="node">
-                <div className="ic">🤖</div>
-                <div className="t">ML</div>
-              </div>
-            </div>
-          }
+          media={{ kind: 'img', src: IMG.gistdaThailandMap, cap: 'ระบบ GISTDA — ภาพถ่ายดาวเทียมทั่วประเทศ', fit: 'contain' }}
           cat="ครบวงจรข้อมูล"
           title="เชื่อมฮาร์ดแวร์เข้ากับข้อมูลได้ทั้งเส้น"
+          proof="ตัวอย่าง: GISTDA เชื่อมข้อมูลภาพถ่ายดาวเทียมทั่วประเทศเข้าแดชบอร์ดเดียว"
         >
           IoT · Big Data · Machine Learning · Dashboard · Ecommerce
         </WCard>

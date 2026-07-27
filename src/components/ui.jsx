@@ -72,12 +72,14 @@ export function Pill({ children }) {
  *   'img'   → light tile with an emoji (fic) or an actual <img>
  * `fit` ('cover' default | 'contain') — 'contain' is for images whose native
  * ratio doesn't match the box (wide banner screenshots, near-4:3 photos) —
- * the full image shows uncropped, letterboxed over a blurred/zoomed copy of
- * itself so the box still reads as fully filled (no flat gray bars).
+ * the full image shows uncropped. `bg` controls what fills the letterbox:
+ *   'blur' (default) — a blurred/zoomed copy of the image itself
+ *   'light' — the plain light tile background, for screenshots that read
+ *   best on white (dashboards, maps) rather than behind a blurred copy
  */
-export function Media({ kind = 'img', src, poster, fic, cap, badge, className = '', style, fit = 'cover' }) {
+export function Media({ kind = 'img', src, poster, fic, cap, badge, className = '', style, fit = 'cover', bg = 'blur' }) {
   const isVideo = kind === 'video'
-  const blurFill = fit === 'contain' && !isVideo && !!src
+  const blurFill = fit === 'contain' && !isVideo && !!src && bg === 'blur'
   const cls = `media${isVideo ? '' : ' img'}${fit === 'contain' ? ' fit-contain' : ''}${className ? ' ' + className : ''}`
   return (
     <div className={cls} style={style}>

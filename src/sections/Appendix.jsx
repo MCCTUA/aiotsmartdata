@@ -1,8 +1,28 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Section, SectionHeader, FadeUp } from '../components/ui.jsx'
+import { IMG } from '../assets.js'
 
 const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+
+// Curated leftovers from the CodeCube project set — one representative shot
+// per client not already used in the main WorksSW cards.
+const GALLERY = [
+  { src: IMG.dtacMydtacHero, label: 'dtac — MyDTAC' },
+  { src: IMG.truedigitalparkDashboardChart, label: 'True Digital Park — Dashboard' },
+  { src: IMG.healthDashboardDonuts, label: 'กรมอนามัย — Dashboard' },
+  { src: IMG.exatTrafficChart, label: 'EXAT — กราฟจราจร' },
+  { src: IMG.funplanetPartystar, label: 'Fun Planet' },
+  { src: IMG.yayoiDeliveryHero, label: 'Yayoi — Delivery' },
+  { src: IMG.mkMember, label: 'MK — สมาชิก' },
+  { src: IMG.indexInsurtechBanner, label: 'Index Creative Village — InsurTech' },
+  { src: IMG.probationKioskWhite, label: 'กรมคุมประพฤติ — Kiosk' },
+  { src: IMG.cuteshopEcommerceMobile, label: 'Cute Shop — Ecommerce' },
+  { src: IMG.keepqueCrmDashboard, label: 'Keepque — CRM' },
+  { src: IMG.fnWebsiteFranchise, label: 'FN — เว็บแฟรนไชส์' },
+  { src: IMG.tescolotusAppPromo, label: 'Tesco Lotus — App' },
+  { src: IMG.unadmeMarketingShowcase, label: 'Unadme — Marketing' },
+]
 
 const CARDS = [
   {
@@ -86,6 +106,23 @@ export default function Appendix() {
           </div>
         </FadeUp>
       ))}
+      <FadeUp className="apcard" id="ap-codecube">
+        <div className="cat">Appendix · CodeCube (AI/Data)</div>
+        <h3>พรีเซนต์ CodeCube — ผลงาน AI/Data เพิ่มเติม</h3>
+        <p>ตัวอย่างระบบจริงที่พัฒนาให้ลูกค้าหลากหลายอุตสาหกรรม — Telecom · Retail · Amusement · ภาครัฐ</p>
+        <div className="apgallery">
+          {GALLERY.map((g) => (
+            <div className="apthumb" key={g.label}>
+              <img src={g.src} alt={g.label} loading="lazy" />
+              <span>{g.label}</span>
+            </div>
+          ))}
+        </div>
+        <div className="ref">แหล่ง: CodeCube Company Profile</div>
+        <div className="backlink" onClick={() => go('clients')}>
+          ← กลับไปลูกค้าอ้างอิง
+        </div>
+      </FadeUp>
     </Section>
   )
 }

@@ -107,6 +107,14 @@ h2.title { font-size: clamp(1.7rem, 1rem + 2.6vw, 2.7rem); font-weight: 700; let
 .media.img .play { display: none; }
 .media.img .fic { font-size: 30px; margin-bottom: 5px; z-index: 1; }
 .media.tall { aspect-ratio: 4/3; }
+
+/* reference-customer logo wall */
+.logowall { display: grid; grid-template-columns: repeat(8, 1fr); gap: 14px; margin-top: 30px; }
+@media (max-width: 1100px) { .logowall { grid-template-columns: repeat(6, 1fr); } }
+@media (max-width: 640px) { .logowall { grid-template-columns: repeat(3, 1fr); gap: 10px; } }
+.logotile { background: #fff; border: 1px solid var(--line-soft); border-radius: 14px; aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; padding: 14px; }
+.logotile img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; filter: grayscale(1); opacity: .65; transition: .2s; }
+.logotile:hover img { filter: grayscale(0); opacity: 1; }
 /* wide banner-style screenshots — show the whole image instead of cropping */
 .media.fit-contain img, .media.fit-contain video { object-fit: contain; }
 /* blurred/zoomed copy of the same image fills the box behind the full,
@@ -239,13 +247,6 @@ h2.title { font-size: clamp(1.7rem, 1rem + 2.6vw, 2.7rem); font-weight: 700; let
 .pendingmedia .t { font-size: 12.5px; font-weight: 600; color: var(--gray); }
 .pendingmedia .s { font-size: 11.5px; color: var(--gray2); }
 
-/* small hand-built flow diagram (IoT → Data → ML) — real finished graphic, not a stock icon */
-.flowdiagram { aspect-ratio: 16/9; border-radius: 12px 12px 0 0; background: linear-gradient(135deg, #0a0a0a, #1a2b45); display: flex; align-items: center; justify-content: center; gap: 10px; padding: 20px; }
-.flowdiagram .node { background: rgba(255,255,255,.08); border: 1px solid rgba(127,180,255,.35); border-radius: 12px; padding: 12px 16px; text-align: center; }
-.flowdiagram .node .ic { font-size: 22px; }
-.flowdiagram .node .t { font-size: 11px; color: #cfe0ff; font-weight: 700; margin-top: 4px; font-family: var(--font-la); }
-.flowdiagram .arrow { color: #7fb4ff; font-size: 18px; font-weight: 700; }
-
 /* Smart Pole — modules stacked on one pole (real composed diagram, not a stock icon) */
 .polediagram { aspect-ratio: 16/9; border-radius: 12px; background: linear-gradient(135deg, #0a0a0a, #1a2b45); display: flex; align-items: center; justify-content: center; gap: 22px; padding: 20px; }
 .polediagram .stack { display: flex; flex-direction: column; gap: 8px; }
@@ -260,7 +261,16 @@ h2.title { font-size: clamp(1.7rem, 1rem + 2.6vw, 2.7rem); font-weight: 700; let
 .apcard .ref { margin-top: 14px; font-size: 12px; color: var(--gray2); }
 .backlink { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--blue); cursor: pointer; }
 
+.apgallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 18px; }
+.apthumb { border: 1px solid var(--line-soft); border-radius: 12px; overflow: hidden; background: var(--bg2); }
+.apthumb img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.apthumb span { display: block; padding: 7px 9px; font-size: 11.5px; color: var(--gray); }
+
+.nav .navlogo { height: 22px; width: auto; display: inline-block; vertical-align: middle; margin-right: 8px; border-radius: 5px; }
+
 footer { background: #04152f; color: rgba(255, 255, 255, .7); padding: 56px 24px; text-align: center; font-size: 13px; }
+footer .footlogos { display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 20px; }
+footer .footlogos img { height: 34px; width: auto; }
 footer .big { color: #fff; font-weight: 700; font-size: 18px; margin-bottom: 8px; }
 footer .disc { margin-top: 18px; font-size: 12px; opacity: .6; max-width: 64ch; margin-left: auto; margin-right: auto; }
 

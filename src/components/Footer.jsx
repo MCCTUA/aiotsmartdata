@@ -1,8 +1,13 @@
 import React from 'react'
+import { IMG } from '../assets.js'
 
 export default function Footer() {
   return (
     <footer>
+      <div className="footlogos">
+        <img src={IMG.codecubeLogo} alt="CodeCube" />
+        <img src={IMG.gismoLion} alt="Genius Gismo" />
+      </div>
       <div className="big">AIOT · Lighting &amp; Vision Platform</div>
       <div>CodeCube (Software / AIOT) × Genius Gismo (Lighting Hardware)</div>
       <div className="disc">
