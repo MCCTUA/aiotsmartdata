@@ -9,9 +9,8 @@ export default function Hero() {
       <div className="wrap">
         <span className="badge">ผู้เชี่ยวชาญ AIOT Software + Lighting Hardware</span>
         <h1>
-          ทุกเสาไฟ ทุกกล้อง
-          <br />
-          <span className="hl">มีสมองและคุยกันได้</span>
+          Smart Living &amp; Smart City <br />
+          <span className="hl">พัฒนาด้วยข้อมูล</span>
         </h1>
         <p className="sub">
           เราไม่ได้ขาย “อุปกรณ์” ที่ติดครั้งเดียวจบ — เราสร้าง “แพลตฟอร์ม” ที่ทำให้ทุกสิ่งที่คุณติดตั้ง
@@ -28,11 +27,11 @@ export default function Hero() {
         <div className="chips">
           <div className="chip">
             <div className="n">Hardware + Software</div>
-            <div className="t">ครบสองด้านในบ้านเดียว</div>
+            <div className="t">One Stop Solution</div>
           </div>
           <div className="chip">
-            <div className="n latin">20+</div>
-            <div className="t">ปีงานซอฟต์แวร์/ข้อมูลระดับชาติ</div>
+            <div className="n latin">16+ / 20+</div>
+            <div className="t">ประสบการณ์ เป็นที่ยอมรับขององค์กรชั้นนำ</div>
           </div>
           <div className="chip">
             <div className="n latin">2553</div>

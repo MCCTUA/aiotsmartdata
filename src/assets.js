@@ -23,7 +23,7 @@ export const IMG = {
   smartPolePhoto: asset('images/smartlight/installation/IMG_5052.jpeg'),
 
   // CodeCube project photos (real screens, replace old slide placeholders)
-  exatExpresswayMap: asset('images/about/codecube/15_expressway_iot.jpg'),
+  exatExpresswayMap: asset('images/about/15_expressway_iot.jpg'),
   ojaBigdataDashboard: asset(
     'images/about/codecube/project_oja_bigdata_dashboard.jpg',
   ),

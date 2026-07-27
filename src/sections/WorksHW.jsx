@@ -7,9 +7,9 @@ export default function WorksHW() {
   return (
     <Section id="hw" label="ผลงาน Hardware" alt>
       <SectionHeader
-        kicker="ผลงานพูดแทน"
+        kicker="ตัวอย่างผลงาน"
         title="ผลงาน · Hardware (Lighting)"
-        lead="โรงงานผลิตเอง ออกแบบแสงเอง — ให้ตัวเลขและองค์กรระดับประเทศเป็นคนพูดแทน"
+        lead="โรงงานผลิตเอง ออกแบบแสงเอง ประสบการณ์มากกว่า 16 ปี"
       />
 
       <PageBlk tag="Hardware · หน้า 1 / 3">
@@ -27,7 +27,7 @@ export default function WorksHW() {
           title="งานออกแบบเฉพาะ — MMTH"
           proof="งานที่คนซื้อโคมมาติดทำไม่ได้"
         >
-          เสาสูง 25 ม. ระยะห่างเสากว้างผิดปกติ ยังคุมความสว่างสม่ำเสมอ + ลดพลังงานมหาศาล
+          เสาสูง 25 ม. ระยะห่างเสา 160 เมตร ยังคุมความสว่างสม่ำเสมอ + ลดพลังงาน 79%
         </WCard>
       </PageBlk>
 
