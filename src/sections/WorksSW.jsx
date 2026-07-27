@@ -14,7 +14,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 1 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.expresswayIot, cap: 'แดชบอร์ด IoT ด่านเก็บเงินทางด่วน', fit: 'contain', style: { aspectRatio: '3.79/1' } }}
+          media={{ kind: 'img', src: IMG.expresswayIot, cap: 'แดชบอร์ด IoT ด่านเก็บเงินทางด่วน', fit: 'contain', style: { aspectRatio: '720/190' } }}
           cat="AIOT"
           title="ทางด่วน (การทางพิเศษ)"
           proof="ระบบ mission-critical ที่พลาดไม่ได้"
@@ -38,7 +38,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 2 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.justice, cap: 'ระบบ Big Data กระทรวงยุติธรรม', fit: 'contain', style: { aspectRatio: '4.5/1' } }}
+          media={{ kind: 'img', src: IMG.justice, cap: 'ระบบ Big Data กระทรวงยุติธรรม', fit: 'contain', style: { aspectRatio: '720/160' } }}
           cat="Machine Learning"
           title="กระทรวงยุติธรรม"
           proof="ข้อมูลระดับนโยบายประเทศ"
@@ -46,7 +46,7 @@ export default function WorksSW() {
           Big Data / ML เชื่อมข้อมูลข้ามหน่วยงานหลายสิบหน่วยในกระทรวง
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.maptaphutEmergency, cap: 'หน้าจอระบบเหตุฉุกเฉิน (ทน.มาบตาพุด)' }}
+          media={{ kind: 'img', src: IMG.maptaphutEmergency, cap: 'หน้าจอระบบเหตุฉุกเฉิน (ทน.มาบตาพุด)', fit: 'contain', style: { aspectRatio: '1500/400' } }}
           cat="Emergency Management"
           title="เทศบาล + สาธารณูปโภค"
         >
@@ -56,7 +56,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 3 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.gistda, cap: 'ระบบ GISTDA — ภาพถ่ายดาวเทียม' }}
+          media={{ kind: 'img', src: IMG.gistda, cap: 'ระบบ GISTDA — ภาพถ่ายดาวเทียม', fit: 'contain', style: { aspectRatio: '720/162' } }}
           cat="Ecommerce"
           title="แพลตฟอร์มค้าปลีก / ออนไลน์"
         >
