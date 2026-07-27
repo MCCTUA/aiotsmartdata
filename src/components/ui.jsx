@@ -70,19 +70,23 @@ export function Pill({ children }) {
  * blueprint's placeholder tile (emoji + caption). `kind`:
  *   'video' → 16:9 dark tile with a play glyph or an actual <video>
  *   'img'   → light tile with an emoji (fic) or an actual <img>
- * `fit` ('cover' default | 'contain') — use 'contain' for wide banner-style
- * screenshots that would otherwise get cropped illegibly by object-fit:cover.
+ * `fit` ('cover' default | 'contain') — 'contain' is for images whose native
+ * ratio doesn't match the box (wide banner screenshots, near-4:3 photos) —
+ * the full image shows uncropped, letterboxed over a blurred/zoomed copy of
+ * itself so the box still reads as fully filled (no flat gray bars).
  */
 export function Media({ kind = 'img', src, poster, fic, cap, badge, className = '', style, fit = 'cover' }) {
   const isVideo = kind === 'video'
+  const blurFill = fit === 'contain' && !isVideo && !!src
   const cls = `media${isVideo ? '' : ' img'}${fit === 'contain' ? ' fit-contain' : ''}${className ? ' ' + className : ''}`
   return (
     <div className={cls} style={style}>
       {badge && <span className="badge">{badge}</span>}
+      {blurFill && <img className="media-bg" src={src} alt="" aria-hidden="true" loading="lazy" />}
       {isVideo && src ? (
         <video src={src} poster={poster} muted loop playsInline controls preload="metadata" />
       ) : !isVideo && src ? (
-        <img src={src} alt={cap || ''} loading="lazy" />
+        <img src={src} alt={cap || ''} loading="lazy" className={blurFill ? 'media-fg' : undefined} />
       ) : isVideo ? (
         <div className="play" />
       ) : (

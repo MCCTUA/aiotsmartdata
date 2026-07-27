@@ -109,6 +109,10 @@ h2.title { font-size: clamp(1.7rem, 1rem + 2.6vw, 2.7rem); font-weight: 700; let
 .media.tall { aspect-ratio: 4/3; }
 /* wide banner-style screenshots — show the whole image instead of cropping */
 .media.fit-contain img, .media.fit-contain video { object-fit: contain; }
+/* blurred/zoomed copy of the same image fills the box behind the full,
+ * uncropped foreground image — hides the letterbox as a flat gray bar */
+.media.fit-contain .media-bg { object-fit: cover; filter: blur(24px) brightness(.6) saturate(1.1); transform: scale(1.15); z-index: 0; }
+.media.fit-contain .media-fg { object-fit: contain; z-index: 1; }
 
 /* hero */
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 24px 80px; background: radial-gradient(120% 100% at 80% -10%, #0a3d8f 0%, #062a63 45%, #04152f 100%); color: #fff; position: relative; overflow: hidden; }
