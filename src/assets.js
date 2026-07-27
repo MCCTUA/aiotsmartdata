@@ -24,49 +24,11 @@ export const IMG = {
 
   // CodeCube project photos (real screens, replace old slide placeholders)
   exatExpresswayMap: asset('images/about/codecube/15_expressway_iot.jpg'),
-  exatTrafficChart: asset(
-    'images/about/codecube/project_exat_traffic_chart.jpg',
-  ),
   ojaBigdataDashboard: asset(
     'images/about/codecube/project_oja_bigdata_dashboard.jpg',
   ),
   catTelecom: asset('images/about/codecube/CAT.jpg'),
   tescoLotusMobileApp: asset('images/about/codecube/tesco_lotus.jpg'),
-  tescolotusAppPromo: asset(
-    'images/about/codecube/project_tescolotus_app_promo.jpg',
-  ),
-  dtacMydtacHero: asset('images/about/codecube/project_dtac_mydtac_hero.jpg'),
-  truedigitalparkDashboardChart: asset(
-    'images/about/codecube/project_truedigitalpark_dashboard_chart.jpg',
-  ),
-  healthDashboardDonuts: asset(
-    'images/about/codecube/project_health_dashboard_donuts.jpg',
-  ),
-  yayoiDeliveryHero: asset(
-    'images/about/codecube/project_yayoi_delivery_hero.jpg',
-  ),
-  mkMember: asset('images/about/codecube/project_mk_member.jpg'),
-  indexInsurtechBanner: asset(
-    'images/about/codecube/project_index_insurtech_banner.jpg',
-  ),
-  probationKioskWhite: asset(
-    'images/about/codecube/project_probation_kiosk_white.jpg',
-  ),
-  cuteshopEcommerceMobile: asset(
-    'images/about/codecube/project_cuteshop_ecommerce_mobile.jpg',
-  ),
-  keepqueCrmDashboard: asset(
-    'images/about/codecube/project_keepque_crm_dashboard.jpg',
-  ),
-  fnWebsiteFranchise: asset(
-    'images/about/codecube/project_fn_website_franchise.jpg',
-  ),
-  funplanetPartystar: asset(
-    'images/about/codecube/project_funplanet_partystar.jpg',
-  ),
-  unadmeMarketingShowcase: asset(
-    'images/about/codecube/project_unadme_marketing_showcase.jpg',
-  ),
 
   codecubeLogo: asset('images/about/logos/codecube_logo.png'),
   gismoLion: asset('images/about/logos/gismo_lion.png'),

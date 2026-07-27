@@ -18,9 +18,8 @@ export default function WorksSW() {
             kind: 'img',
             src: IMG.exatExpresswayMap,
             cap: 'แผนที่ระบบทางด่วน — การทางพิเศษแห่งประเทศไทย (EXAT)',
-            fit: 'cover',
-            objectPosition: 'top',
-            className: 'tall',
+            fit: 'contain',
+            bg: 'light',
           }}
           cat="AIOT"
           title="ทางด่วน (การทางพิเศษ)"
