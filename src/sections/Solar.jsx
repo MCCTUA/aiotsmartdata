@@ -1,5 +1,6 @@
 import React from 'react'
 import { Section, SectionHeader, FadeUp } from '../components/ui.jsx'
+import SolarOptions from '../components/SolarOptions.jsx'
 
 const SPECS = [
   ['สถานะงาน', 'กำลังคำนวณ DIALux (แสงจริง)'],
@@ -15,7 +16,7 @@ export default function Solar() {
     <Section id="solar" label="Solar Street Light">
       <SectionHeader
         kicker="หัวข้อท้ายสุด"
-        title="Solar Street Light แบบแยกชิ้น — เราคำนวณ ไม่ได้เดา"
+        title="Solar Street Light แบบแยกชิ้น — ผลการคำนวณ DIALux"
         lead="โจทย์: ถนน 4–5 ม. เสา 6 ม. ระยะห่าง 25–30 ม. ความสว่างเฉลี่ย ≥ 20 lx สำรอง 3 คืน หรี่ 3 ช่วง"
       />
       <FadeUp className="grid g2" style={{ alignItems: 'start' }}>
@@ -34,10 +35,6 @@ export default function Solar() {
               </div>
             </div>
           </div>
-          <div className="notebar" style={{ marginTop: 22 }}>
-            <span className="ic">🤝</span>
-            <p>งานนี้ยังไม่จบ เราไม่ให้ตัวเลขที่ยังไม่นิ่งจนคุณเอาไปเสนอลูกค้าแล้วเสียหน้าทีหลัง</p>
-          </div>
         </div>
         <div className="pendingmedia" style={{ aspectRatio: '4/3', borderRadius: 14 }}>
           <div className="ic">📐</div>
@@ -48,6 +45,9 @@ export default function Solar() {
       <FadeUp as="p" className="lead" style={{ marginTop: 26 }}>
         งานระยะห่างกว้างแบบนี้คือ “งานออกแบบแสง” — แบบเดียวกับ <strong>High Mast MMTH</strong>{' '}
         ที่เราวางเสาห่างได้จริง
+      </FadeUp>
+      <FadeUp>
+        <SolarOptions />
       </FadeUp>
     </Section>
   )
