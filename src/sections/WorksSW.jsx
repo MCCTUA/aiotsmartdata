@@ -7,7 +7,7 @@ export default function WorksSW() {
   return (
     <Section id="sw" label="ผลงาน Software">
       <SectionHeader
-        kicker="ผลงานพูดแทน"
+        kicker="ตัวอย่างผลงาน"
         title="ผลงาน · Software (AIOT / Data)"
         lead="ระบบภาครัฐและองค์กรระดับชาติ · 20+ ปี"
       />
@@ -16,8 +16,8 @@ export default function WorksSW() {
         <WCard
           media={{
             kind: 'img',
-            src: IMG.exatExpresswayMap,
-            cap: 'แผนที่ระบบทางด่วน — การทางพิเศษแห่งประเทศไทย (EXAT)',
+            src: IMG.expresswayIot,
+            cap: 'ระบบ IoT ด่านเก็บเงินทางด่วน — การทางพิเศษแห่งประเทศไทย (EXAT)',
             fit: 'contain',
             bg: 'light',
             className: 'tall',
@@ -70,19 +70,21 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 3 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.tescolotusClubcard, cap: 'ระบบสมาชิก/คะแนนสะสม — Tesco Lotus Clubcard', fit: 'contain' }}
-          cat="Ecommerce"
-          title="แพลตฟอร์มค้าปลีก / ออนไลน์"
+          media={{ kind: 'img', src: IMG.tescoLotusMobileApp, cap: 'แอปสมาชิก Tesco Lotus ClubCard', fit: 'contain' }}
+          cat="Mobile App"
+          title="Tesco Lotus — แอปสมาชิก ClubCard"
+          proof="งานแอปค้าปลีกสเกลผู้ใช้จำนวนมาก"
         >
-          ระบบสมาชิก คะแนนสะสม และค้าขายออนไลน์ที่เชื่อมข้อมูลระดับองค์กรค้าปลีก (Tesco Lotus, MK)
+          พัฒนาแอปพลิเคชันสมาชิกครบวงจร — ClubCard, แสตมป์, คูปอง, โปรโมชัน และข่าวสาร ทีมเราพัฒนาและดูแลระบบทั้งหมด
+          เพื่อให้บริการลูกค้าสะดวกและมีประสิทธิภาพสูงสุด
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.gistdaThailandMap, cap: 'ระบบ GISTDA — ภาพถ่ายดาวเทียมทั่วประเทศ', fit: 'contain' }}
-          cat="ครบวงจรข้อมูล"
-          title="เชื่อมฮาร์ดแวร์เข้ากับข้อมูลได้ทั้งเส้น"
-          proof="ตัวอย่าง: GISTDA เชื่อมข้อมูลภาพถ่ายดาวเทียมทั่วประเทศเข้าแดชบอร์ดเดียว"
+          media={{ kind: 'img', src: IMG.catTelecom, cap: 'CAT Telecom Public Company Limited', fit: 'contain' }}
+          cat="Government Software Partner"
+          title="CAT Telecom"
+          proof="ได้รับความไว้วางใจให้เป็นทีมพัฒนาเบื้องหลังงานภาครัฐของ CAT อย่างต่อเนื่อง"
         >
-          IoT · Big Data · Machine Learning · Dashboard · Ecommerce
+          พันธมิตรพัฒนาซอฟต์แวร์หลักของ CAT — เมื่อ CAT รับงานประมูลภาครัฐที่มีส่วนของซอฟต์แวร์ มักมอบหมายให้ทีมเราเป็นผู้พัฒนา
         </WCard>
       </PageBlk>
     </Section>

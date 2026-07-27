@@ -21,13 +21,12 @@ export const IMG = {
   smartPolePhoto: asset('images/smartlight/installation/IMG_5052.jpeg'),
 
   // CodeCube project photos (real screens, replace old slide placeholders)
-  exatExpresswayMap: asset('images/about/codecube/project_exat_expressway_map.jpg'),
-  exatTollgate: asset('images/about/codecube/project_exat_tollgate.jpg'),
+  expresswayIot: asset('images/about/15_expressway_iot.jpg'),
   exatTrafficChart: asset('images/about/codecube/project_exat_traffic_chart.jpg'),
   ojaBigdataDashboard: asset('images/about/codecube/project_oja_bigdata_dashboard.jpg'),
-  tescolotusClubcard: asset('images/about/codecube/project_tescolotus_clubcard.jpg'),
+  catTelecom: asset('images/about/codecube/CAT.jpg'),
+  tescoLotusMobileApp: asset('images/about/codecube/tesco_lotus.jpg'),
   tescolotusAppPromo: asset('images/about/codecube/project_tescolotus_app_promo.jpg'),
-  gistdaThailandMap: asset('images/about/codecube/project_gistda_thailand_map.jpg'),
   dtacMydtacHero: asset('images/about/codecube/project_dtac_mydtac_hero.jpg'),
   truedigitalparkDashboardChart: asset('images/about/codecube/project_truedigitalpark_dashboard_chart.jpg'),
   healthDashboardDonuts: asset('images/about/codecube/project_health_dashboard_donuts.jpg'),
