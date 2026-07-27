@@ -115,20 +115,11 @@ export default function SolarOptions() {
       </div>
 
       <div className="solarsummary">
-        <div className="t">คุณเลือก: {picked.name}</div>
+        <div className="t">: {picked.name}</div>
         <div className="d">
           แบต {picked.battery} / แผง {picked.panel} — ข้อแลก: {picked.tradeoff}
         </div>
       </div>
-
-      <ul className="solarnotes">
-        <li>โคม 50W แบบ C ≈ 384 Wh / แผง 120 W (เทียบเท่าสเปค all-in-one จีนทั่วไป)</li>
-        <li>
-          ข้อแลกของ C: กลางดึกมืด พึ่ง PIR + รีดแบตลึก อายุสั้นกว่า — แต่ของเราแบตเกรดดี (Lekise) และ
-          "แยกส่วน" เปลี่ยนเฉพาะจุดที่เสียได้
-        </li>
-        <li>ตัวเลขเป็นค่าประมาณเพื่อเปรียบเทียบ (อิงผล DIALux EN 13201:2015) ยืนยันรุ่นจริงตามหน้างาน</li>
-      </ul>
     </div>
   )
 }

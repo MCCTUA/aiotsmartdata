@@ -42,10 +42,6 @@ export default function Solar() {
           <div className="s">ผล DIALux — layout เสา/ความสว่าง</div>
         </div>
       </FadeUp>
-      <FadeUp as="p" className="lead" style={{ marginTop: 26 }}>
-        งานระยะห่างกว้างแบบนี้คือ “งานออกแบบแสง” — แบบเดียวกับ <strong>High Mast MMTH</strong>{' '}
-        ที่เราวางเสาห่างได้จริง
-      </FadeUp>
       <FadeUp>
         <SolarOptions />
       </FadeUp>

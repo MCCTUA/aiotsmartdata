@@ -100,7 +100,7 @@ export default function Appendix() {
       <SectionHeader
         kicker="ภาคผนวก · Appendix"
         title="พรีเซนต์รายโซลูชัน"
-        lead="กดปุ่ม “เปิดพรีเซนต์ฉบับเต็ม” ของแต่ละแอป — เนื้อหาพอร์ตมาจาก smartdata.webdemona.com มาแสดงในเว็บนี้ · กด ← กลับ เพื่อกลับมาหน้านี้จุดเดิม"
+        lead="กดปุ่ม “เปิดพรีเซนต์ฉบับเต็ม” ของแต่ละแอป · กด ← กลับ เพื่อกลับมาหน้านี้จุดเดิม"
       />
       {CARDS.map((c) => (
         <FadeUp className="apcard" id={c.id} key={c.id}>
