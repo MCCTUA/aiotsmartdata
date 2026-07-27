@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Section, SectionHeader, FadeUp } from '../components/ui.jsx'
-import { IMG } from '../assets.js'
+import LogoWall from '../components/LogoWall.jsx'
+import { IMG, CLIENT_LOGOS } from '../assets.js'
 
 const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
@@ -110,6 +111,8 @@ export default function Appendix() {
         <div className="cat">Appendix · CodeCube (AI/Data)</div>
         <h3>พรีเซนต์ CodeCube — ผลงาน AI/Data เพิ่มเติม</h3>
         <p>ตัวอย่างระบบจริงที่พัฒนาให้ลูกค้าหลากหลายอุตสาหกรรม — Telecom · Retail · Amusement · ภาครัฐ</p>
+        <div className="apsubhead">ลูกค้าที่ไว้วางใจ</div>
+        <LogoWall logos={CLIENT_LOGOS} compact />
         <div className="apgallery">
           {GALLERY.map((g) => (
             <div className="apthumb" key={g.label}>

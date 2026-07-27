@@ -45,32 +45,32 @@ export const IMG = {
   gismoLion: asset('images/about/logos/gismo_lion.png'),
 }
 
-// Reference-customer logo wall — order is display order (priority names first).
+// Reference-customer logo wall (Software / CodeCube side) — order is display
+// order, most-recognizable names first.
 export const CLIENT_LOGOS = [
   { name: 'การทางพิเศษแห่งประเทศไทย (EXAT)', src: asset('images/about/logos/client_exat.png') },
   { name: 'GISTDA', src: asset('images/about/logos/client_gistda.png') },
   { name: 'NT (โทรคมนาคมแห่งชาติ)', src: asset('images/about/logos/client_nt_national_telecom.png') },
   { name: 'CAT Telecom', src: asset('images/about/logos/client_cat_telecom.png') },
   { name: 'dtac', src: asset('images/about/logos/client_dtac.png') },
-  { name: 'Tesco Lotus', src: asset('images/about/logos/client_tesco_lotus_app.png') },
-  { name: 'MK Restaurants', src: asset('images/about/logos/client_mk_restaurants.png') },
-  { name: 'Yayoi', src: asset('images/about/logos/client_yayoi.png') },
   { name: 'MCOT', src: asset('images/about/logos/client_mcot.png') },
   { name: 'กรมอนามัย', src: asset('images/about/logos/client_dept_of_health.png') },
   { name: 'กรมคุมประพฤติ', src: asset('images/about/logos/client_dept_of_probation.png') },
   { name: 'OJA', src: asset('images/about/logos/client_oja.png') },
+  { name: 'OIC / CPB', src: asset('images/about/logos/client_oic_cpb.png') },
+  { name: 'Tesco Lotus', src: asset('images/about/logos/client_tesco_lotus.png') },
+  { name: 'MK Restaurants', src: asset('images/about/logos/client_mk_restaurants.png') },
+  { name: 'Yayoi', src: asset('images/about/logos/client_yayoi.png') },
   { name: 'True Digital Park', src: asset('images/about/logos/client_true_digital_park.png') },
   { name: 'Index Creative Village', src: asset('images/about/logos/client_index_creative_village.png') },
-  { name: 'Amazon', src: asset('images/about/logos/client_amazon.png') },
   { name: 'Daily News', src: asset('images/about/logos/client_daily_news.png') },
-  { name: 'OIC / CPB', src: asset('images/about/logos/client_oic_cpb.png') },
-  { name: '555 Paper Plus', src: asset('images/about/logos/client_555_paperplus.png') },
-  { name: 'Cute Shop', src: asset('images/about/logos/client_cute_shop.png') },
-  { name: 'Family Amusement', src: asset('images/about/logos/client_family_amusement.png') },
+  { name: 'Amazon', src: asset('images/about/logos/client_amazon.png') },
   { name: 'FN (หนอมรอย)', src: asset('images/about/logos/client_fn_nomaroi.png') },
-  { name: 'Fun Festa', src: asset('images/about/logos/client_fun_festa.png') },
+  { name: '555 Paper Plus', src: asset('images/about/logos/client_555_paperplus.png') },
+  { name: 'Family Amusement', src: asset('images/about/logos/client_family_amusement.png') },
   { name: 'Fun Planet', src: asset('images/about/logos/client_fun_planet.png') },
-  { name: 'Tesco Lotus (คะแนนสะสม)', src: asset('images/about/logos/client_tesco_lotus.png') },
+  { name: 'Fun Festa', src: asset('images/about/logos/client_fun_festa.png') },
+  { name: 'Cute Shop', src: asset('images/about/logos/client_cute_shop.png') },
 ]
 
 export const VID = {
