@@ -14,7 +14,7 @@ export default function WorksHW() {
 
       <PageBlk tag="Hardware · หน้า 1 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.egat, cap: 'High Bay/Canopy ที่ EGAT', fit: 'contain', style: { aspectRatio: '600/440' } }}
+          media={{ kind: 'img', src: IMG.egat, cap: 'High Bay/Canopy ที่ EGAT', fit: 'contain' }}
           cat="Reliability · EGAT"
           title="เปิด 24 ชั่วโมงต่อเนื่อง"
           proof="ความทนที่มาจากสนามจริง ไม่ใช่สเปคในกระดาษ"
@@ -22,7 +22,7 @@ export default function WorksHW() {
           โคมของเราที่ EGAT ทำงานตลอด 24 ชม. ในสภาพแวดล้อมร้อนจัด และยังใช้ต่อเนื่อง
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.mmth, cap: 'High Mast ลานจอด MMTH', fit: 'contain', style: { aspectRatio: '600/440' } }}
+          media={{ kind: 'img', src: IMG.mmth, cap: 'High Mast ลานจอด MMTH', fit: 'contain' }}
           cat="High Mast · Custom"
           title="งานออกแบบเฉพาะ — MMTH"
           proof="งานที่คนซื้อโคมมาติดทำไม่ได้"
@@ -33,7 +33,7 @@ export default function WorksHW() {
 
       <PageBlk tag="Hardware · หน้า 2 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.toa, cap: 'Solar Street Light ลานจอด TOA', fit: 'contain', style: { aspectRatio: '600/440' } }}
+          media={{ kind: 'img', src: IMG.toa, cap: 'Solar Street Light ลานจอด TOA', fit: 'contain' }}
           cat="Solar Light · TOA"
           title="ออกแบบตามมาตรฐาน + กฎหมาย"
           proof="งานออกแบบแสง ไม่ใช่แค่ซื้อโคม"
@@ -41,7 +41,7 @@ export default function WorksHW() {
           ออกแบบความสว่างผ่านทั้งมาตรฐานและข้อกำหนดทางกฎหมาย
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.huaykwang, cap: 'ไฟถนน เขตห้วยขวาง', fit: 'contain', style: { aspectRatio: '600/440' } }}
+          media={{ kind: 'img', src: IMG.huaykwang, cap: 'ไฟถนน เขตห้วยขวาง', fit: 'contain' }}
           cat="Street Light"
           title="โคมไฟถนน เขตห้วยขวาง"
         >
