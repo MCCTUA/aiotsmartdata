@@ -1,9 +1,11 @@
 // Resolve a public/ asset path against Vite's base ('./') so it works both in
 // dev and in the static dist/ build dropped on any host.
-export const asset = (p) => `${import.meta.env.BASE_URL}${p.replace(/^\/+/, '')}`
+export const asset = (p) =>
+  `${import.meta.env.BASE_URL}${p.replace(/^\/+/, '')}`
 
 export const IMG = {
   egat: asset('images/about/EGAT.jpg'),
+  t5AphiwatCentralTerminal: asset('images/about/T5_aphiwat_central_terminal.jpg'),
   mmth: asset('images/about/MMTH.jpg'),
   toa: asset('images/about/TOA.jpg'),
   huaykwang: asset('images/about/huaykwang.jpg'),
@@ -21,24 +23,50 @@ export const IMG = {
   smartPolePhoto: asset('images/smartlight/installation/IMG_5052.jpeg'),
 
   // CodeCube project photos (real screens, replace old slide placeholders)
-  exatExpresswayMap: asset('images/about/codecube/project_exat_expressway_map.jpg'),
-  exatTrafficChart: asset('images/about/codecube/project_exat_traffic_chart.jpg'),
-  ojaBigdataDashboard: asset('images/about/codecube/project_oja_bigdata_dashboard.jpg'),
+  exatExpresswayMap: asset('images/about/codecube/15_expressway_iot.jpg'),
+  exatTrafficChart: asset(
+    'images/about/codecube/project_exat_traffic_chart.jpg',
+  ),
+  ojaBigdataDashboard: asset(
+    'images/about/codecube/project_oja_bigdata_dashboard.jpg',
+  ),
   catTelecom: asset('images/about/codecube/CAT.jpg'),
   tescoLotusMobileApp: asset('images/about/codecube/tesco_lotus.jpg'),
-  tescolotusAppPromo: asset('images/about/codecube/project_tescolotus_app_promo.jpg'),
+  tescolotusAppPromo: asset(
+    'images/about/codecube/project_tescolotus_app_promo.jpg',
+  ),
   dtacMydtacHero: asset('images/about/codecube/project_dtac_mydtac_hero.jpg'),
-  truedigitalparkDashboardChart: asset('images/about/codecube/project_truedigitalpark_dashboard_chart.jpg'),
-  healthDashboardDonuts: asset('images/about/codecube/project_health_dashboard_donuts.jpg'),
-  yayoiDeliveryHero: asset('images/about/codecube/project_yayoi_delivery_hero.jpg'),
+  truedigitalparkDashboardChart: asset(
+    'images/about/codecube/project_truedigitalpark_dashboard_chart.jpg',
+  ),
+  healthDashboardDonuts: asset(
+    'images/about/codecube/project_health_dashboard_donuts.jpg',
+  ),
+  yayoiDeliveryHero: asset(
+    'images/about/codecube/project_yayoi_delivery_hero.jpg',
+  ),
   mkMember: asset('images/about/codecube/project_mk_member.jpg'),
-  indexInsurtechBanner: asset('images/about/codecube/project_index_insurtech_banner.jpg'),
-  probationKioskWhite: asset('images/about/codecube/project_probation_kiosk_white.jpg'),
-  cuteshopEcommerceMobile: asset('images/about/codecube/project_cuteshop_ecommerce_mobile.jpg'),
-  keepqueCrmDashboard: asset('images/about/codecube/project_keepque_crm_dashboard.jpg'),
-  fnWebsiteFranchise: asset('images/about/codecube/project_fn_website_franchise.jpg'),
-  funplanetPartystar: asset('images/about/codecube/project_funplanet_partystar.jpg'),
-  unadmeMarketingShowcase: asset('images/about/codecube/project_unadme_marketing_showcase.jpg'),
+  indexInsurtechBanner: asset(
+    'images/about/codecube/project_index_insurtech_banner.jpg',
+  ),
+  probationKioskWhite: asset(
+    'images/about/codecube/project_probation_kiosk_white.jpg',
+  ),
+  cuteshopEcommerceMobile: asset(
+    'images/about/codecube/project_cuteshop_ecommerce_mobile.jpg',
+  ),
+  keepqueCrmDashboard: asset(
+    'images/about/codecube/project_keepque_crm_dashboard.jpg',
+  ),
+  fnWebsiteFranchise: asset(
+    'images/about/codecube/project_fn_website_franchise.jpg',
+  ),
+  funplanetPartystar: asset(
+    'images/about/codecube/project_funplanet_partystar.jpg',
+  ),
+  unadmeMarketingShowcase: asset(
+    'images/about/codecube/project_unadme_marketing_showcase.jpg',
+  ),
 
   codecubeLogo: asset('images/about/logos/codecube_logo.png'),
   gismoLion: asset('images/about/logos/gismo_lion.png'),
@@ -47,27 +75,72 @@ export const IMG = {
 // Reference-customer logo wall (Software / CodeCube side) — order is display
 // order, most-recognizable names first.
 export const CLIENT_LOGOS = [
-  { name: 'การทางพิเศษแห่งประเทศไทย (EXAT)', src: asset('images/about/logos/client_exat.png') },
+  {
+    name: 'การทางพิเศษแห่งประเทศไทย (EXAT)',
+    src: asset('images/about/logos/client_exat.png'),
+  },
   { name: 'GISTDA', src: asset('images/about/logos/client_gistda.png') },
-  { name: 'NT (โทรคมนาคมแห่งชาติ)', src: asset('images/about/logos/client_nt_national_telecom.png') },
-  { name: 'CAT Telecom', src: asset('images/about/logos/client_cat_telecom.png') },
-  { name: 'การประปานครหลวง (MWA)', src: asset('images/about/logos/client_mwa.png') },
+  {
+    name: 'NT (โทรคมนาคมแห่งชาติ)',
+    src: asset('images/about/logos/client_nt_national_telecom.png'),
+  },
+  {
+    name: 'CAT Telecom',
+    src: asset('images/about/logos/client_cat_telecom.png'),
+  },
+  {
+    name: 'การประปานครหลวง (MWA)',
+    src: asset('images/about/logos/client_mwa.png'),
+  },
   { name: 'dtac', src: asset('images/about/logos/client_dtac.png') },
   { name: 'MCOT', src: asset('images/about/logos/client_mcot.png') },
-  { name: 'กรมอนามัย', src: asset('images/about/logos/client_dept_of_health.png') },
-  { name: 'กรมคุมประพฤติ', src: asset('images/about/logos/client_dept_of_probation.png') },
+  {
+    name: 'กรมอนามัย',
+    src: asset('images/about/logos/client_dept_of_health.png'),
+  },
+  {
+    name: 'กรมคุมประพฤติ',
+    src: asset('images/about/logos/client_dept_of_probation.png'),
+  },
   { name: 'OJA', src: asset('images/about/logos/client_oja.png') },
   { name: 'OIC / CPB', src: asset('images/about/logos/client_oic_cpb.png') },
-  { name: 'Tesco Lotus', src: asset('images/about/logos/client_tesco_lotus.png') },
-  { name: 'MK Restaurants', src: asset('images/about/logos/client_mk_restaurants.png') },
+  {
+    name: 'Tesco Lotus',
+    src: asset('images/about/logos/client_tesco_lotus.png'),
+  },
+  {
+    name: 'MK Restaurants',
+    src: asset('images/about/logos/client_mk_restaurants.png'),
+  },
   { name: 'Yayoi', src: asset('images/about/logos/client_yayoi.png') },
-  { name: 'True Digital Park', src: asset('images/about/logos/client_true_digital_park.png') },
-  { name: 'Index Creative Village', src: asset('images/about/logos/client_index_creative_village.png') },
-  { name: 'Daily News', src: asset('images/about/logos/client_daily_news.png') },
-  { name: 'FN (หนอมรอย)', src: asset('images/about/logos/client_fn_nomaroi.png') },
-  { name: '555 Paper Plus', src: asset('images/about/logos/client_555_paperplus.png') },
-  { name: 'Family Amusement', src: asset('images/about/logos/client_family_amusement.png') },
-  { name: 'Fun Planet', src: asset('images/about/logos/client_fun_planet.png') },
+  {
+    name: 'True Digital Park',
+    src: asset('images/about/logos/client_true_digital_park.png'),
+  },
+  {
+    name: 'Index Creative Village',
+    src: asset('images/about/logos/client_index_creative_village.png'),
+  },
+  {
+    name: 'Daily News',
+    src: asset('images/about/logos/client_daily_news.png'),
+  },
+  {
+    name: 'FN (หนอมรอย)',
+    src: asset('images/about/logos/client_fn_nomaroi.png'),
+  },
+  {
+    name: '555 Paper Plus',
+    src: asset('images/about/logos/client_555_paperplus.png'),
+  },
+  {
+    name: 'Family Amusement',
+    src: asset('images/about/logos/client_family_amusement.png'),
+  },
+  {
+    name: 'Fun Planet',
+    src: asset('images/about/logos/client_fun_planet.png'),
+  },
   { name: 'Fun Festa', src: asset('images/about/logos/client_fun_festa.png') },
   { name: 'Cute Shop', src: asset('images/about/logos/client_cute_shop.png') },
 ]
@@ -75,25 +148,55 @@ export const CLIENT_LOGOS = [
 // Reference-customer logo wall (Hardware / Gismo lighting side) — order is
 // display order, most-recognizable names first.
 export const GISMO_LOGOS = [
-  { name: 'EGAT (การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย)', src: asset('images/about/logos/gismo/client_egat.png') },
-  { name: 'PEA (การไฟฟ้าส่วนภูมิภาค)', src: asset('images/about/logos/gismo/client_pea.png') },
-  { name: 'กรมทางหลวง', src: asset('images/about/logos/gismo/client_dept_highways.png') },
+  {
+    name: 'EGAT (การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย)',
+    src: asset('images/about/logos/gismo/client_egat.png'),
+  },
+  {
+    name: 'PEA (การไฟฟ้าส่วนภูมิภาค)',
+    src: asset('images/about/logos/gismo/client_pea.png'),
+  },
+  {
+    name: 'กรมทางหลวง',
+    src: asset('images/about/logos/gismo/client_dept_highways.png'),
+  },
   { name: 'PTT', src: asset('images/about/logos/gismo/client_ptt.png') },
   { name: 'SCG', src: asset('images/about/logos/gismo/client_scg.png') },
   { name: 'Toyota', src: asset('images/about/logos/gismo/client_toyota.png') },
   { name: 'Honda', src: asset('images/about/logos/gismo/client_honda.png') },
-  { name: 'Mitsubishi Motors', src: asset('images/about/logos/gismo/client_mitsubishi_motors.png') },
-  { name: 'Panasonic', src: asset('images/about/logos/gismo/client_panasonic.png') },
+  {
+    name: 'Mitsubishi Motors',
+    src: asset('images/about/logos/gismo/client_mitsubishi_motors.png'),
+  },
+  {
+    name: 'Panasonic',
+    src: asset('images/about/logos/gismo/client_panasonic.png'),
+  },
   { name: 'Kubota', src: asset('images/about/logos/gismo/client_kubota.png') },
-  { name: 'Sumitomo Rubber', src: asset('images/about/logos/gismo/client_sumitomo_rubber.png') },
-  { name: 'Bangkok Glass', src: asset('images/about/logos/gismo/client_bangkok_glass.png') },
+  {
+    name: 'Sumitomo Rubber',
+    src: asset('images/about/logos/gismo/client_sumitomo_rubber.png'),
+  },
+  {
+    name: 'Bangkok Glass',
+    src: asset('images/about/logos/gismo/client_bangkok_glass.png'),
+  },
   { name: 'Esso', src: asset('images/about/logos/gismo/client_esso.png') },
   { name: 'Kao', src: asset('images/about/logos/gismo/client_kao.png') },
-  { name: 'PepsiCo', src: asset('images/about/logos/gismo/client_pepsico.png') },
-  { name: 'Fujikura', src: asset('images/about/logos/gismo/client_fujikura.png') },
+  {
+    name: 'PepsiCo',
+    src: asset('images/about/logos/gismo/client_pepsico.png'),
+  },
+  {
+    name: 'Fujikura',
+    src: asset('images/about/logos/gismo/client_fujikura.png'),
+  },
   { name: 'Hana', src: asset('images/about/logos/gismo/client_hana.png') },
   { name: 'NHK', src: asset('images/about/logos/gismo/client_nhk.png') },
-  { name: 'Kantana', src: asset('images/about/logos/gismo/client_kantana.png') },
+  {
+    name: 'Kantana',
+    src: asset('images/about/logos/gismo/client_kantana.png'),
+  },
   { name: 'CCH', src: asset('images/about/logos/gismo/client_cch.png') },
   { name: 'PDI', src: asset('images/about/logos/gismo/client_pdi.png') },
 ]

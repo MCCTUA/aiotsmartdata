@@ -51,13 +51,7 @@ export default function WorksHW() {
 
       <PageBlk tag="Hardware · หน้า 3 / 3">
         <WCard
-          mediaNode={
-            <div className="pendingmedia">
-              <div className="ic">🚆</div>
-              <div className="t">รอรูปจากหน้างาน</div>
-              <div className="s">สถานีกลางกรุงเทพอภิวัฒน์ (T5)</div>
-            </div>
-          }
+          media={{ kind: 'img', src: IMG.t5AphiwatCentralTerminal, cap: 'สถานีกลางกรุงเทพอภิวัฒน์ (T5)', fit: 'contain' }}
           cat="Indoor · T5"
           title="สถานีกลางกรุงเทพอภิวัฒน์"
           proof="งานระดับ landmark ของประเทศ"
