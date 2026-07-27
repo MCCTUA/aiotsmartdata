@@ -12,7 +12,6 @@ import Demo from './sections/Demo.jsx'
 import Expand from './sections/Expand.jsx'
 import Solar from './sections/Solar.jsx'
 import QA from './sections/QA.jsx'
-import Close from './sections/Close.jsx'
 import Appendix from './sections/Appendix.jsx'
 
 export default function Home() {
@@ -31,7 +30,6 @@ export default function Home() {
       <Expand />
       <Solar />
       <QA />
-      <Close />
       <Appendix />
     </main>
   )
