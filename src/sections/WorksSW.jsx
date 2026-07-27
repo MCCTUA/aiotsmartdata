@@ -14,7 +14,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 1 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.expresswayIot, cap: 'แดชบอร์ด IoT ด่านเก็บเงินทางด่วน' }}
+          media={{ kind: 'img', src: IMG.expresswayIot, cap: 'แดชบอร์ด IoT ด่านเก็บเงินทางด่วน', fit: 'contain', style: { aspectRatio: '3.79/1' } }}
           cat="AIOT"
           title="ทางด่วน (การทางพิเศษ)"
           proof="ระบบ mission-critical ที่พลาดไม่ได้"
@@ -38,7 +38,7 @@ export default function WorksSW() {
 
       <PageBlk tag="Software · หน้า 2 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.justice, cap: 'ระบบ Big Data กระทรวงยุติธรรม' }}
+          media={{ kind: 'img', src: IMG.justice, cap: 'ระบบ Big Data กระทรวงยุติธรรม', fit: 'contain', style: { aspectRatio: '4.5/1' } }}
           cat="Machine Learning"
           title="กระทรวงยุติธรรม"
           proof="ข้อมูลระดับนโยบายประเทศ"

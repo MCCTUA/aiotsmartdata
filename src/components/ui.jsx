@@ -70,11 +70,14 @@ export function Pill({ children }) {
  * blueprint's placeholder tile (emoji + caption). `kind`:
  *   'video' → 16:9 dark tile with a play glyph or an actual <video>
  *   'img'   → light tile with an emoji (fic) or an actual <img>
+ * `fit` ('cover' default | 'contain') — use 'contain' for wide banner-style
+ * screenshots that would otherwise get cropped illegibly by object-fit:cover.
  */
-export function Media({ kind = 'img', src, poster, fic, cap, badge, className = '', style }) {
+export function Media({ kind = 'img', src, poster, fic, cap, badge, className = '', style, fit = 'cover' }) {
   const isVideo = kind === 'video'
+  const cls = `media${isVideo ? '' : ' img'}${fit === 'contain' ? ' fit-contain' : ''}${className ? ' ' + className : ''}`
   return (
-    <div className={`media${isVideo ? '' : ' img'}${className ? ' ' + className : ''}`} style={style}>
+    <div className={cls} style={style}>
       {badge && <span className="badge">{badge}</span>}
       {isVideo && src ? (
         <video src={src} poster={poster} muted loop playsInline controls preload="metadata" />
