@@ -20,6 +20,8 @@ export const IMG = {
   fallDetection: asset('images/elderly-care/radar-fall-how.png'),
   trafficHero: asset('images/smart_traffic/slide01-hero.png'),
   smartlightScreen1: asset('images/smartlight/Screen1.webp'),
+  smartlightAlerts: asset('images/smartlight/Alerts.webp'),
+  smartlightLocation: asset('images/smartlight/location.webp'),
   smartPolePhoto: asset('images/smartlight/installation/IMG_5052.jpeg'),
 
   // CodeCube project photos (real screens, replace old slide placeholders)
