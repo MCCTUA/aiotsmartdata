@@ -4,29 +4,6 @@ import { Section, SectionHeader, FadeUp } from '../components/ui.jsx'
 
 const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
-// 3 headline features for now — the rest of the Smart Light feature set
-// gets added here later.
-const SMARTLIGHT_FEATURES = [
-  {
-    ic: '🕐',
-    sub: 'Dimming Schedule',
-    title: 'หรี่ไฟอัจฉริยะตามเวลา',
-    body: 'ตั้งความสว่างเป็นช่วงเวลาได้ เช่น 18:00 = 100% · 22:00 = 70% · 00:00 = 40% — ประหยัดไฟช่วงดึกโดยยังปลอดภัย',
-  },
-  {
-    ic: '🗺️',
-    sub: 'Zone/Tag · Sunrise/Sunset',
-    title: 'ควบคุมเป็นกลุ่ม + ตามพระอาทิตย์',
-    body: 'คุมทั้งเมือง รายพื้นที่ (Zone) หรือกลุ่มย่อย (Tag) · เปิด/ปิดอิง Sunrise–Sunset ตามพิกัด GPS ของแต่ละเสา',
-  },
-  {
-    ic: '📡',
-    sub: 'Live Telemetry',
-    title: 'รู้สถานะจริงทุกต้น',
-    body: 'ต้นไหนติด/ดับ/ผิดปกติ เห็นทันทีบน dashboard · ยืนยันด้วยข้อมูลจากอุปกรณ์จริง ไม่ใช่เดาจากตาราง',
-  },
-]
-
 const CARDS = [
   {
     id: 'ap-aicam',
@@ -58,7 +35,6 @@ const CARDS = [
     cat: 'Appendix · Smart Light + Smart Traffic',
     title: 'ไฟอัจฉริยะ + จราจร',
     body: 'telemetry รายต้น · หรี่ตามโปรไฟล์ · OTA · DALI-2/D4i · จราจรด้วย Radar + AI Camera',
-    features: SMARTLIGHT_FEATURES,
     ref: 'แหล่ง: smartdata.webdemona.com — หน้า Smart Light / telemetry spec',
   },
   {
@@ -107,18 +83,6 @@ export default function Appendix() {
           <div className="cat">{c.cat}</div>
           <h3>{c.title}</h3>
           <p>{c.body}</p>
-          {c.features && (
-            <div className="grid g3" style={{ marginTop: 18 }}>
-              {c.features.map((f) => (
-                <div className="card" key={f.title}>
-                  <div style={{ fontSize: 26, marginBottom: 6 }}>{f.ic}</div>
-                  <div className="cat">{f.sub}</div>
-                  <h3>{f.title}</h3>
-                  <p>{f.body}</p>
-                </div>
-              ))}
-            </div>
-          )}
           <button className="presbtn" onClick={() => navigate(`/pres/${c.id}`)}>
             ▶ เปิดพรีเซนต์ฉบับเต็ม
           </button>

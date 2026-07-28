@@ -6,9 +6,9 @@ import ClientsHW from './sections/ClientsHW.jsx'
 import WorksSW from './sections/WorksSW.jsx'
 import Clients from './sections/Clients.jsx'
 import Solution from './sections/Solution.jsx'
+import Platform from './sections/Platform.jsx'
 import NodeStory from './sections/NodeStory.jsx'
 import NemaZhaga from './sections/NemaZhaga.jsx'
-import Demo from './sections/Demo.jsx'
 import Expand from './sections/Expand.jsx'
 import Solar from './sections/Solar.jsx'
 import QA from './sections/QA.jsx'
@@ -24,9 +24,9 @@ export default function Home() {
       <WorksSW />
       <Clients />
       <Solution />
+      <Platform />
       <NodeStory />
       <NemaZhaga />
-      <Demo />
       <Expand />
       <Solar />
       <QA />

@@ -24,8 +24,8 @@ export default function Hero() {
           <button className="btn btn-p" onClick={() => go('edge')}>
             จุดเด่นของเรา ↓
           </button>
-          <button className="btn btn-g" onClick={() => go('demo')}>
-            ไปที่ Demo Smart Light
+          <button className="btn btn-g" onClick={() => go('platform')}>
+            ไปที่ Demo Platform
           </button>
         </div>
         <div className="chips">
