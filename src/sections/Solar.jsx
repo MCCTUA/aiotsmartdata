@@ -2,6 +2,7 @@ import React from 'react'
 import { Section, SectionHeader, FadeUp } from '../components/ui.jsx'
 import SolarOptions from '../components/SolarOptions.jsx'
 import DialuxResults from '../components/DialuxResults.jsx'
+import { IMG } from '../assets.js'
 
 const SPECS = [
   ['สถานะงาน', 'กำลังคำนวณ DIALux (แสงจริง)'],
@@ -20,6 +21,24 @@ export default function Solar() {
         title="Solar Street Light แบบแยกชิ้น — ผลการคำนวณ DIALux"
         lead="โจทย์: ถนน 4–5 ม. เสา 6 ม. ระยะห่าง 25–30 ม. ความสว่างเฉลี่ย ≥ 20 lx สำรอง 3 คืน หรี่ 3 ช่วง"
       />
+      <FadeUp>
+        <img
+          src={IMG.solarStyle}
+          alt="Solar Street Light แยกชิ้น — ตัวอย่างการติดตั้งจริง (เสา + แผงโซลาร์) และตัวโคม LED"
+          style={{
+            width: '100%',
+            height: 'auto',
+            display: 'block',
+            borderRadius: 14,
+            marginTop: 8,
+            boxShadow: '0 8px 30px rgba(0,0,0,.10)',
+          }}
+          loading="lazy"
+        />
+        <p className="solarctx" style={{ marginTop: 8, textAlign: 'center' }}>
+          ตัวอย่างแบบแยกชิ้น — เสา + แผงโซลาร์ + โคม LED
+        </p>
+      </FadeUp>
       <FadeUp>
         <div className="spec">
           {SPECS.map(([k, v], i) => (

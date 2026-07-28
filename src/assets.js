@@ -41,6 +41,8 @@ export const IMG = {
   spSun: asset('images/smartpole/sun-events.png'),
   spDevices: asset('images/smartpole/device-inventory.png'),
   spNotify: asset('images/smartpole/notifications.png'),
+
+  solarStyle: asset('images/solar/solar-street-light-style.png'),
 }
 
 // Reference-customer logo wall (Software / CodeCube side) — order is display
