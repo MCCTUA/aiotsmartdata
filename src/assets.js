@@ -41,6 +41,7 @@ export const IMG = {
   spSun: asset('images/smartpole/sun-events.png'),
   spDevices: asset('images/smartpole/device-inventory.png'),
   spNotify: asset('images/smartpole/notifications.png'),
+  spRoles: asset('images/smartpole/role-management.png'),
 
   solarStyle: asset('images/solar/solar-street-light-style.png'),
 }

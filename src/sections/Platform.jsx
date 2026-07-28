@@ -139,28 +139,17 @@ export default function Platform() {
           ทะเบียนอุปกรณ์ครบ Node ID · ซิม · ระดับหรี่ไฟ · สถานะสด — สแกน QR ที่เสาแล้วช่างเห็นข้อมูลตรงต้นทันที
         </ZoomCard>
 
-        <div className="wcard">
-          <div
-            className="media img fit-contain"
-            style={{
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              gap: 10, flexWrap: 'wrap', padding: 28, background: 'var(--blue-l)',
-            }}
-          >
-            <span className="pill">Platform Owner</span>
-            <span className="pill">Dealer</span>
-            <span className="pill">Customer</span>
-          </div>
-          <div className="body">
-            <div className="cat">Multi-tenant</div>
-            <h3>รองรับตัวแทนจำหน่าย แยกสิทธิ์ชัดเจน</h3>
-            <p>
-              โครงสร้างสิทธิ์ 3 ชั้น เจ้าของแพลตฟอร์ม / ดีลเลอร์ / ลูกค้า — บริหารหลายโครงการในบัญชีเดียว
-              แต่ละงานเห็นเฉพาะของตัวเอง
-            </p>
-            <div className="proof">พร้อมขยายเป็นโมเดลตัวแทนจำหน่าย / white-label ได้ทันที</div>
-          </div>
-        </div>
+        <ZoomCard
+          onZoom={open}
+          src={IMG.spRoles}
+          alt="Role management — admin / manager / operator / viewer"
+          cat="Multi-tenant"
+          title="รองรับตัวแทนจำหน่าย แยกสิทธิ์ชัดเจน"
+          proof="พร้อมขยายเป็นโมเดลตัวแทนจำหน่าย / white-label ได้ทันที"
+        >
+          กำหนดสิทธิ์การใช้งานตามบทบาท (admin / manager / operator / viewer) — บริหารหลายโครงการในบัญชีเดียว
+          แต่ละงานเห็นเฉพาะของตัวเอง รองรับโครงสร้างเจ้าของแพลตฟอร์ม / ดีลเลอร์ / ลูกค้า
+        </ZoomCard>
       </PageBlk>
 
       {zoom && (
