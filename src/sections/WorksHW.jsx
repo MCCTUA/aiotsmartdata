@@ -1,7 +1,7 @@
-import React from 'react'
-import { Section, SectionHeader } from '../components/ui.jsx'
-import { PageBlk, WCard } from '../components/WorkPage.jsx'
-import { IMG, VID } from '../assets.js'
+import React from 'react';
+import { Section, SectionHeader } from '../components/ui.jsx';
+import { PageBlk, WCard } from '../components/WorkPage.jsx';
+import { IMG, VID } from '../assets.js';
 
 export default function WorksHW() {
   return (
@@ -14,58 +14,92 @@ export default function WorksHW() {
 
       <PageBlk tag="Hardware · หน้า 1 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.egat, cap: 'High Bay/Canopy ที่ EGAT', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.egat,
+            cap: 'High Bay/Canopy ที่ EGAT',
+            fit: 'contain'
+          }}
           cat="Reliability · EGAT"
           title="เปิด 24 ชั่วโมงต่อเนื่อง"
           proof="ความทนที่มาจากสนามจริง ไม่ใช่สเปคในกระดาษ"
         >
-          โคมของเราที่ EGAT ทำงานตลอด 24 ชม. ในสภาพแวดล้อมร้อนจัด และยังใช้ต่อเนื่อง
+          โคมของเราที่ EGAT ทำงานตลอด 24 ชม. ในสภาพแวดล้อมร้อนจัดเกิน 55
+          °Cในหน้าร้อน และยังใช้ต่อเนื่อง
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.mmth, cap: 'High Mast ลานจอด MMTH', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.mmth,
+            cap: 'High Mast ลานจอด MMTH',
+            fit: 'contain'
+          }}
           cat="High Mast · Custom"
           title="งานออกแบบเฉพาะ — MMTH"
-          proof="งานที่คนซื้อโคมมาติดทำไม่ได้"
+          proof="ออกแบบใหม่ทั้งหมด · งานที่คนซื้อโคมมาติดทำไม่ได้"
         >
-          เสาสูง 25 ม. ระยะห่างเสา 160 เมตร ยังคุมความสว่างสม่ำเสมอ + ลดพลังงาน 79%
+          เสาสูง 25 ม. ระยะห่างเสา 160 เมตร ยังคุมความสว่างสม่ำเสมอ (Uo : 0.4) +
+          ลดพลังงาน 79%
         </WCard>
       </PageBlk>
 
       <PageBlk tag="Hardware · หน้า 2 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.toa, cap: 'Solar Street Light ลานจอด TOA', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.toa,
+            cap: 'Solar Street Light ลานจอด TOA',
+            fit: 'contain'
+          }}
           cat="Solar Light · TOA"
-          title="ออกแบบตามมาตรฐาน + กฎหมาย"
-          proof="งานออกแบบแสง ไม่ใช่แค่ซื้อโคม"
+          title="ออกแบบตามมาตรฐาน + กฎหมาย [Eav ≥ 50 lx , Uo ≥ 0.5]"
+          proof="งานออกแบบแสง พร้อมติตตั้งโคม Solar Street Light ในลานจอดของ TOA"
         >
           ออกแบบความสว่างผ่านทั้งมาตรฐานและข้อกำหนดทางกฎหมาย
         </WCard>
         <WCard
-          media={{ kind: 'img', src: IMG.huaykwang, cap: 'ไฟถนน เขตห้วยขวาง', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.huaykwang,
+            cap: 'ไฟถนน เขตห้วยขวาง',
+            fit: 'contain'
+          }}
           cat="Street Light"
           title="โคมไฟถนน เขตห้วยขวาง"
         >
-          ปรับปรุงแสงสว่างถนนสายหลัก กทม.
+          ปรับปรุงแสงสว่างถนนสายหลัก กทม. [ลาดพร้าว 48, 48/1, ประชาอุทิศ]
         </WCard>
       </PageBlk>
 
       <PageBlk tag="Hardware · หน้า 3 / 3">
         <WCard
-          media={{ kind: 'img', src: IMG.t5AphiwatCentralTerminal, cap: 'สถานีกลางกรุงเทพอภิวัฒน์ (T5)', fit: 'contain' }}
+          media={{
+            kind: 'img',
+            src: IMG.t5AphiwatCentralTerminal,
+            cap: 'สถานีกลางกรุงเทพอภิวัฒน์ (T5)',
+            fit: 'contain'
+          }}
           cat="Indoor · T5"
           title="สถานีกลางกรุงเทพอภิวัฒน์"
           proof="งานระดับ landmark ของประเทศ"
         >
-          งานหลอด T5 ในสถานีรถไฟหลักของประเทศ
+          งานหลอด T5 ทดแทนหลอดเดิมที่เสื่อมสภาพ ในสถานีรถไฟหลักของประเทศ
         </WCard>
         <WCard
-          media={{ kind: 'video', src: VID.smtPcba, poster: VID.smtPcbaPoster, badge: 'คลิป', cap: 'สายการผลิต SMT LED PCBA ในโรงงานของเรา' }}
+          media={{
+            kind: 'video',
+            src: VID.smtPcba,
+            poster: VID.smtPcbaPoster,
+            badge: 'คลิป',
+            cap: 'สายการผลิต SMT LED PCBA ในโรงงานของเรา'
+          }}
           cat="โรงงานของเรา"
           title="ผลิต–ออกแบบ–ทดสอบครบในที่เดียว"
+          proof="PCBA · Lighting Product"
         >
-          Street Light · High Mast · Solar · T5/T8 · Flood · High Bay
+          Node MCU · Street Light · High Mast · Solar · T5/T8 · Flood · High Bay
         </WCard>
       </PageBlk>
     </Section>
-  )
+  );
 }

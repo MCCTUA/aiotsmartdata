@@ -9,7 +9,7 @@ export default function Clients() {
       <SectionHeader
         kicker="ไว้วางใจโดย"
         title="ลูกค้าอ้างอิง · Reference Customers (ฝั่ง Software)"
-        lead="20+ ปี ส่งมอบระบบให้หน่วยงานรัฐและองค์กรชั้นนำ"
+        lead="8+ ปี ส่งมอบระบบให้หน่วยงานรัฐและองค์กรชั้นนำ"
       />
       <FadeUp>
         <LogoWall logos={CLIENT_LOGOS} />
